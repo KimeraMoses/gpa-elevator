@@ -1,0 +1,206 @@
+
+/********HOME-PAGE************/
+@media (max-width: 1200px){
+ 
+  
+
+}
+
+
+@media (max-width: 801px){
+    nav{
+        border:none;
+        padding: 0;
+    }
+    nav div{
+        display: block !important;
+    }
+    nav ul {
+        display: none;
+        position:static;
+    }
+    nav ul li{
+        display: block;
+
+    }
+    nav ul ul {
+        position: static;
+        background-color: #4db6ac;
+    }
+    nav ul ul li{
+        background-color: #4db6ac;  
+        border-radius:0;
+    }
+    nav ul ul ul{
+        margin-left:2px;
+        line-height: 20px;
+        padding: 0 !important;
+      }
+      
+      .login-signup-section{
+        text-align: left;
+        padding-bottom: 5px !important;
+        min-height:40px;
+      }
+      .twitter-handle{
+      text-align: center;
+      float:center;
+      }
+    .questionSection__ask{ 
+        padding-left:0;
+        padding-right:0;
+       
+       }
+
+     
+}
+
+
+
+@media (max-width: 375px){
+    .search_box-form{
+        position: fixed;
+        right:2rem;
+        top:5rem;
+        transition: all .1s;
+    }
+    .search_box-submit_btn{
+        position: fixed;
+        border:0;
+        right:2.5rem;
+    
+    }
+    .login-signup-section{
+        text-align: left;
+        padding-right: 20px;
+        height:30px;
+      }
+
+}
+@media (max-width:360px){
+    .login-signup-section{
+        text-align:left;
+        padding:0px;
+        overflow: hidden;
+      }
+    .login-signup-section a{
+        margin-left: 2px;
+       }
+}
+
+
+@media (max-width:301px){
+    .search-button{
+        position:fixed;
+        top:4.5rem;
+        right:2.5rem;
+      }
+    .search_icon{
+        position:fixed;
+        top:5.2rem;
+        right:3rem;
+    }
+    .search_icon-close{
+        position:fixed;
+        top:5rem;
+        right:3rem;
+  }
+   .search_box-form{
+    position: fixed;
+    right:2rem;
+    top:7rem;
+    transition: all .1s;
+}
+   .search_box-submit_btn{
+    position: fixed;
+    border:0;
+    right:2.5rem;
+
+}
+}
+
+@media (max-width:600px){
+    .login-signup-section{
+        text-align: left;
+        padding:1px 10px 3px 0;
+        
+      }
+      header img {
+         align-content: center;
+        
+      }
+      #header__img{
+        width:200px !important;
+        min-height: 100px;
+        position: absolute;
+        top:70px;
+        left:30px;
+        
+      }
+      
+      header{
+        min-height: 100px;
+      }
+}
+@media (min-width:480px){
+    .login-signup-section{
+        text-align: right;
+        padding:1px 58px 3px 0;
+
+      }
+}
+
+
+
+/*------carousel-----*/
+
+
+ @media(max-width:550px){
+   #carousel_height{
+     height:200px !important;
+
+   }
+ }
+
+
+ @media(min-height:700px){
+  #back-to-top{
+    
+  
+  }
+}
+
+
+
+ /*******OUR SERVICES******/
+ /*******OUR SERVICES******/
+
+
+ /*******FOOTER media-queries******/
+@media (max-width:502px){
+
+input[type="newsletter_text"]{
+  padding-left: 2px;
+  width:200px;
+  margin-left:5px;
+}
+.newsletter{
+  text-align: center;
+}
+.newsletter_SubscribeNote{
+  text-align: left;
+}
+.btn-submit{
+  margin-left: 50px;
+}
+
+}
+
+
+
+
+
+
+ /*******FOOTER media-queries******/
+
+
