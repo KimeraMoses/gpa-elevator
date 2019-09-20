@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Department of Civil and Environmental Engineering|CEDAT</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/custom3.css">
+</head>
+<script type="text/javascript">   <!--Linking the search button to google-->
+      function searchit() {
+           document.getElementById('gpa_elevator').href=
+           (("https://www.google.com/search?q=")+
+           (document.getElementById("search-box-input").value));
+      }
+</script>
+
+<body>
+  <div class="banner">
+
+    <!--USERS SIGNUP-LOGIN SECTION STARTS HERE-->
+  <div class="container-fluid login-signup-section">
+    <div class="container-fluid login-signup-section">
+      <a href="#"  class="btn login-signup-section-btn" data-toggle="modal" data-target="#exampleModalCenter-login" >LOGIN</a>
+      <a href="#" class="btn login-signup-section-btn" data-toggle="modal" data-target="#exampleModalCenter-sign-up" >SIGN UP</a>
+    </div>
+    <!-- Modal-->
+    <div class="modal fade" id="exampleModalCenter-login" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">LOGIN FORM</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="content center">
+              <form class="" action="#" method="post">
+
+                <b><label for="username" class="label">Username or Email:</label></b><br>
+                <div class="input-field">
+                  <i class="form-icon fas fa-user"></i>
+                  <input type="text" id="username" class="form-control-text" placeholder="Username or Email">
+                </div>
+
+                  <b><label for="studentnumber">Student Number:</label></b><br>
+                  <div class="input-field">
+                  <i class="form-icon fas fa-graduation-cap"></i>
+                  <input type="text" id="studentnumber" class="form-control-text" placeholder="Student Number">
+                </div>
+                <b><label for="pass">Password:</label></b><br>
+                <div class="input-field">
+                  <i class="form-icon fas fa-user-lock"></i>
+                  <input type="password" id="pass" class="form-control-text" placeholder="Password">
+                </div><br>
+                <div class="input-field-Remember">
+                  <input type="checkbox" id="check" value="">
+                  <label for="check">Remember me</label>
+                </div>
+                <div class="container-fluid  login-submit-section">
+                  <b><button type="submit" class="btn btn-login_submit btn-lg" >LOGIN</button></b><br>
+                    <a href="#" class="Forgot-password">Forgot Password?</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--sign up section-->
+<div class="modal fade" id="exampleModalCenter-sign-up" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">SIGN UP FORM</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body modal-body-signup">
+        <div class="content center">
+          <form class="mb-4" action="#" method="post">
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-user"></i>
+                <input type="sign-up-text-box" class="form-control-text" id="firstname" placeholder="FirstName" required >
+              </div>
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-user"></i>
+                <input type="sign-up-text-box" class="form-control-text" id="lastname" placeholder="LastName" required >
+              </div>
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-graduation-cap"></i>
+                <input type="sign-up-text-box" class="form-control-text" id="usercourse" placeholder="What's Your Course?" required >
+              </div>
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-clock"></i>
+                <input type="sign-up-text-box" class="form-control-text" id="useryear-of-study" placeholder="Which year?" required >
+              </div>
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-graduation-cap"></i>
+                <input type="sign-up-text-box" class="form-control-text" id="studentnumber" placeholder="Student Number" required >
+              </div>
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-phone-alt"></i>
+                <input type="sign-up-text-box" class="form-control-text" id="usercontact" placeholder="Phone Number" required >
+              </div>
+
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-envelope"></i>
+                <input type="sign-up-text-box" class="form-control-text" id="useremail" placeholder="Username@gmail.com" required >
+              </div>
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-user-lock"></i>
+                <input type="password" class="form-control-text" id="pass" placeholder="Password" required >
+              </div>
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-user-lock"></i>
+                <input type="password" class="form-control-text" id="pass" placeholder="Confirm password" required >
+              </div>
+            <b><button type="submit" class="btn btn-signup_submit btn-lg" >Submit</button></b>
+          </form>
+        </div>
+      </div>
+      <div class="container-fluid modal-footer signup_login_footer">
+        <h5>Already have an account?</h5> <h4><a href="#exampleModalCenter-login" class="login_footer_link" data-toggle="modal" data-target="#exampleModalCenter-login"> Sign in</a></h4>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--USERS SIGNUP-LOGIN SECTION END HERE-->
+
+
+
+    <header>
+
+      <div class="gpa_logo"><a href="file:///D:/gpa_elevator/html/index.html"><img id="img" src="../img/elevator-logo.png"/></a></div>
+       <div  class="search-box">
+         <input id="search-box-input" class="search-text" type="text" name="" placeholder="search">
+         <a href="" id="gpa_elevator" onclick="searchit()" onkeypress="searchit" class="search-btn">
+         <i class="fas fa-search"></i>
+         <!--
+         <form class="search-bar search-bar--small" action=".">
+           <i class="fa fa-search search-bar__icon hidden-sm hidden-md hidden-lg"></i>
+           <button type="submit" class="btn-stu btn-primary-stu search-bar__button hidden-xs" data-test-selector="search-button">
+             <i class="fa fa-search"></i></button>
+             <input type="search" placeholder="Search for courses, books or documents" data-test-selector="searchFieldHeader" value="" data-hj-whitelist="true" spellcheck="true">
+         </form>-->
+         </a>
+       </div>
+    </header>
+<div class="container-fluid" id="mox_menu">
+    <h4>Department of Civil and Environmental Engineering | Cedat</h4>
+  </div>
+  <div class="container-fluid" id="cedat-schools">
+ <ul>
+   <li>
+      <h1 class ="schools"><b>Bachelor of science in Civil Engineering</b></h1>
+          <ul>
+              <li class="link"><b><i>YEAR ONE</i></b>
+                  <ul>
+                    <li>
+                        <b class="sem"><i>SEMESTER ONE</i></b>
+                        <ul>
+                          <li class="course_units"><b><i><a  href="EMT1101.html">EMT1101-Engineering Math I</a></i></b></li>
+                          <li class="course_units"><b><i><a  href="#">CIV1101-Engineering Drawing	</a></i></b></li>
+                          <li class="course_units"><b><i><a  href="#">CIV1102-Introduction to Civil Engineering	</a></i></b></li>
+                          <li class="course_units"><b><i><a  href="CMP1103-ict.html">EMT1104-Information and Communication Technology I	</a></i></b></li>
+                          <li class="course_units"><b><i><a  href="communication skills.html">TEC1101-Communication Skills for Technology	</a></i></b></li>
+                          <li class="course_units"><b><i><a  href="#">CIV1103-Statics and Dynamics for Civil Engineers</a></i></b></li>
+                          </ul>
+                      </li>
+                  <li>
+                      <b class="sem"><i>SEMESTER TWO</i></b>
+                      <ul>
+                         <li class="course_units"><b><i><a  href="EMT1201.html">EMT1201-Engineering Math II</a></i></b></li>
+                         <li class="course_units"><b><i><a  href = "#">CIV1201-Strength of Materials	</a></i></b></li>
+                         <li class="course_units"><b><i><a  href="#">CIV1202-Fluid Mechanics</a></i></b></li>
+                         <li class="course_units"><b><i><a  href="#">CIV1203-Electrical Engineering	</a></i></b></li>
+                         <li class="course_units"><b><i><a  href="CMP1103-ict.html">EMT1202-Information and Communication Technology II	</a></i></b></li>
+                         <li class="course_units"><b><i><a  href="#">TEC1301-Workshop Practice</a></i></b></li>
+                      </ul>
+                    </li>
+                    </ul>
+                  </li>
+
+
+  <li class="link"><b><i>YEAR TWO</i></b>
+            <ul>
+                <li>
+                    <b class="sem"><i>SEMESTER ONE</i></b>
+                      <ul>
+                        <li class="course_units"><b><i><a  href="#">EMT2101-Engineering Mathematics III	</a></i></b></li>
+                        <li class="course_units"><b><i><a  href="#">CIV2102-Engineering Geology	</a></i></b></li>
+                        <li class="course_units"><b><i><a  href="#">CIV2103-Engineering Surveying I	</a></i></b></li>
+                        <li class="course_units"><b><i><a  href="#">CIV2104-Hydraulics		</a></i></b></li>
+                        <li class="course_units"><b><i><a  href="#">TEC2101-Sociology For Technology</a></i></b></li>
+                        <li class="course_units"><b><i><a  href="#">CIV2105-Thermodynamics for Civil engineers (elective)	</a></i></b></li>
+                        <li class="course_units"><b><i><a  href="#">CIV2101-Theory of Structures I	</a></i></b></li>
+                      </ul>
+                </li>
+                  <li>
+                    <b class="sem"><i>SEMESTER TWO</i></b>
+                      <ul>
+                       <li class="course_units"><b><i><a  href="#">EMT2201-Engineering Mathematics IV	</a></i></b></li>
+                       <li class="course_units"><b><i><a  href="#">CIV2201-Soil Mechanics	</a></i></b></li>
+                       <li class="course_units"><b><i><a  href="#">CIV2202-Theory of Structures II	</a></i></b></li>
+                       <li class="course_units"><b><i><a  href="#">CIV2203-Civil Engineering Materials	</a></i></b></li>
+                       <li class="course_units"><b><i><a  href="#">CIV2204-Engineering Surveying II	</a></i></b></li>
+                       <li class="course_units"><b><i><a  href="#">CIV2205-Economics for Civil Engineering (elective)	</a></i></b></li>
+                      </ul>
+                  </li>
+            </ul>
+  </li>
+
+
+  <li class="link"><b><i>YEAR THREE</i></b>
+            <ul>
+              <li>
+                <b class="sem"><i>SEMESTER ONE</i></b>
+                    <ul>
+                      <li class="course_units"><b><i><a href="#">CIV3101-Organisational Theory for Engineering	</a></i></b></li>
+                      <li class="course_units"><b><i><a href="#">CIV3102-Design of Structures I (Concrete)	</a></i></b></li>
+                      <li class="course_units"><b><i><a href="#">CIV3103-Highway Engineering	</a></i></b></li>
+                      <li class="course_units"><b><i><a href="#">CIV3104-Hydrology I	</a></i></b></li>
+                      <li class="course_units"><b><i><a href="#">CIV3105-Construction Technology	</a></i></b></li>
+                      <li class="course_units"><b><i><a href="#">CIV3106-Environmental Chemistry (elective)	</a></i></b></li>
+                      <li class="course_units"><b><i><a href="#">CIV3107-Principles of Quantity surveying (elective)	</a></i></b></li>
+                    </ul>
+              </li>
+              <li>
+                  <b class="sem"><i>SEMESTER TWO</i></b>
+                    <ul>
+                      <li class="course_units"><b><i><a href="#">CIV3201-Foundation Engineering	</a></i></b></li>
+                      <li class="course_units"><b><i><a href="#">CIV3202-Group Design Project	</a></i></b></li>
+                      <li class="course_units"><b><i><a href="#">CIV3203-Design of Structures II (Steel)	</a></i></b></li>
+                      <li class="course_units"><b><i><a href="#">CIV3204-Water Resources Engineering I	</a></i></b></li>
+                      <li class="course_units"><b><i><a href="#">CIV3205-Public Health Engineering I	</a></i></b></li>
+                    </ul>
+             </li>
+          </ul>
+  </li>
+  <li class="link"><b><i>YEAR FOUR</i></b>
+            <ul>
+              <li>
+                <b class="sem"><i>SEMESTER ONE</i></b>
+                    <ul>
+                      <li class="course_units"><b><i><a href="#">CIV4100-Civil Engineering Project I	</a></i></b></li>
+                      <li class="course_units"><b><i><a href="#">CIV4101-Civil Engineering Management	</a></i></b></li>
+                      <li class="course_units"><b><i><a href="#">CIV4102-Civil Engineering Infrastructure Maintenance	</a></i></b></li>
+                      <li class="course_units"><b><i><a href="#">CIV4103-Traffic and Transportation Engineering	</a></i></b></li>
+                      <li class="course_units"><b><i><a href="#">CIV4104-Public Health Engineering II	</a></i></b></li>
+                      <li class="course_units"><b><i><a href="#">CIV4105-Design of Structures III (Timber and Masonry) (elective)	</a></i></b></li>
+                      <li class="course_units"><b><i><a href="#">CIV4106-Hydrology II (elective)	</a></i></b></li>
+                    </ul>
+              </li>
+              <li>
+                  <b class="sem"><i>SEMESTER TWO</i></b>
+                    <ul>
+                      <li class="course_units"><b><i><a href="#">CIV4200-Civil Engineering Project II	</a></i></b></li>
+                      <li class="course_units"><b><i><a href="#">CIV4201-Civil Engineering Law	</a></i></b></li>
+                      <li class="course_units"><b><i><a href="#">CIV4202-Water Resources Engineering II (elective)	</a></i></b></li>
+                      <li class="course_units"><b><i><a href="#">CIV4203-Civil Engineering Economy (elective)	</a></i></b></li>
+                      <li class="course_units"><b><i><a href="#">CIV4204-Civil Engineering Environmental Quality Management (elective)	</a></i></b></li>
+                      <li class="course_units"><b><i><a href="#">CIV4206-Introductory Dynamics of Structures (elective)	</a></i></b></li>
+                      <li class="course_units"><b><i><a href="#">CIV4209-Human Resources Management and Entrepreneurship (elective)	</a></i></b></li>
+                    </ul>
+             </li>
+          </ul>
+  </li>
+  </ul>
+  </li>
+
+
+ </ul>
+       </div>
+<!-------------------->
+
+
+
+<div class="container-fluid " id="services">
+  <h1>What We Offer</h1>
+</div>
+<div class="container-fluid ">
+<div class="row text-center ">
+
+  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3" id="search">
+     <h3><b>Study anytime,anywhere and on any device</b></h3>
+     <hr class="rule">
+     <p>We very well know that being a university student, many things might not go as planned and you may need to study whenever and wherever you may be.Gpa Elevator is the best partner for you.</p>
+   </div>
+  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3" id="resources">
+      <h3><b>Free study resources</b></h3>
+      <hr class="rule">
+      <p>Find and download all pastpaper exams,lecture notes,assignments,links to usefull textbooks,answers from fellow students and much more </p>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3" id="search" >
+        <h3><b>Be Part Of One's Success</b></h3>
+        <hr class="rule">
+        <p>You can easily contribute to someone's success by either answering a question asked by a fellow student or uploading any kind of university pastpaper(in their respective courses) that you may find helpfull to others. </p>
+        <button id="but" type="button" name="btn btn-primary btn-lg">Upload</button>
+   </div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3"id="resources" >
+        <h3><b>Find your university</b></h3>
+        <hr class="rule">
+        <p>Just type the name of your university and start browsing your intended course</p>
+        <button id="but" type="button" name="btn btn-primary btn-lg">Get Started</button>
+   </div>
+ </div>
+</div>
+
+
+<!--<div class="container-fluid " id="list">
+  <div class="row welcome text-left">
+      <div class="container-fluid"><h1 display-4>List of active University</h1></div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" id="first-list">
+      <p class="lead">
+        <a href="#">Makerere University[MUK]</a><br/>
+        <a href="#">Kyambogo University[KYU]</a><br/>
+        <a href="#">Ndejje University[NDU]</a><br/>
+        <a href="#">Nkumba University[NKU]</a><br/>
+        <a href="#">Bugema University[BU]</a><br/>
+  	    <a href="#">Busitema university[BUS]</a><br/>
+  	    <a href="#">Gulu university[GU]</a><br/>
+        </p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <p class="lead">
+  	    <a href="#">Muni university[MU]</a><br/>
+  	    <a href="#">Kabale university[KABU]</a><br/>
+  	    <a href="#">Lira university[LU]</a><br/>
+        <a href="#">Uganda Christian University[UCU]</a><br/>
+        <a href="#">Makerere University Business School[MUBS]</a><br/>
+        <a href="#">Mbarara University of Science and Technology[MUST]</a><br/>
+       </p>
+    </div>
+  </div>
+</div>-->
+  <!--  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+      <a href="#"><button type="button" class="btn btn-outline-secondary" id="but">More</button></a>
+    </div>
+  </div>
+</div>-->
+<!--news trending-->
+<div class="container-fluid" id="news">
+  <h1><i>News Trending</i></h1>
+</div>
+<div class="container-fluid padding">
+<div class="row text-center padding">
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4" id="trending">
+        <img class="img1" src="../img/muk-logo.png" alt="sorry">
+        <h3>Makerere University</h3>
+        <hr class="rule">
+        <p>One of the former contestant for Guild presidency Mukisa goes missing. The latest news that we have gotten today the 2nd/06/2019 shows that,Mukisa Joshua W was discovered but not in a good condition.We shall keep you updated</p>
+
+   </div>
+   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4" id="trending">
+      <img class="img1" src="../img/kyu-logo.jpg" alt="sorry">
+      <h3>Kyambogo University</h3>
+      <hr class="rule">
+      <p>One of the former contestant for Guild presidency Mukisa goes missing. The latest news that we have gotten today the 2nd/06/2019 shows that,Mukisa Joshua W was discovered but not in a good condition.We shall keep you updated</p>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4" id="trending" >
+      <img class="img1" src="../img/NDU.png" alt="sorry">
+      <h3>Ndejje University</h3>
+      <hr class="rule">
+      <p>One of the former contestant for Guild presidency Mukisa goes missing. The latest news that we have gotten today the 2nd/06/2019 shows that,Mukisa Joshua W was discovered but not in a good condition.We shall keep you updated.</p>
+      <button id="but"  class="link" data-toggle="collapse" data-target="#man">More</button>
+    </div>
+    </div>
+  </div>
+  <footer>
+ <!--DISCLAIMER-->
+ <div class="container-fluid padding" id="disclaimer">
+   <div class="mox text-center">
+   <div class="col-12">
+     <i class="icon fa fa-exclamation-circle"></i><h1 >Disclaimer</h1>
+     <hr class="rule">
+   </div>
+     <div class="col-12">
+      <p class="">Please note that pastpapers might slightly be different in setting and format to the exams and test that you are preparing for. The lecturers have all the rights to completely change the format and the questions to new ones(<b>Can be encountered but on rare occassions</b>) that have never appeared</p>
+     </div>
+   </div>
+ </div>
+ <!--news Letter section--->
+
+   <div class="newsletter">
+     <div class="section-box">
+     </div>
+       <div class="newsletter-row">
+         <div class="newsletter_SubscribeNote">
+           <div class="newsletter_SubscribeNote-title">
+           <h1>Subscribe To Our Newsletter</h1>
+           <p>Subscribe to get Notified whenever a paper is uploaded in your particular course or if there are news trending around your campus</p>
+          <hr class="newsletter_SubscribeNote-title__rule">
+         </div>
+
+         <form class="mb-4" action="#" method="post">
+           <b><label for="username">Name:</label></b>
+            <input type="newsletter_text" class="form-control" id="username" placeholder="FirstName  LastName" required>
+            <b><label for="usercourse">Course:</label></b>
+            <input type="newsletter_text" class="form-control" id="usercourse" placeholder="What's Your Course?" required>
+              <b><label for="useremail">Email:</label></b>
+              <input type="newsletter_text" class="form-control" id="useremail" placeholder="Username@gmail.com" required>
+              <b><button type="submit" class="btn btn-submit" onkeypress="#">Submit</button></b>
+         </form>
+       </div>
+       </div>
+   </div>
+
+   <!--connect-->
+     <div class="container-fluid padding" id="footer__connect">
+       <div class="row text-center" id="footer_contactUs">
+         <div class="col-md-6">
+           <h4>Contact Us</h4>
+           <hr class="rule">
+           <p>Tel:+256-778451025<br>+256-759130054<br>
+           Find Us:Kampala,Uganda<br>
+           Makerere University<br>
+           Email us: <a href="#">gpaelevator@gmail.com</a><br></p>
+         </div>
+         <div class="col-md-6">
+           <h4>Follow Us</h4>
+           <hr class="rule">
+           <i class="fab fa-facebook"></i><a href="#">Gpa Elevator</a><br>
+           <i class="fab fa-twitter"></i><a href="#">@gpaelevator</a><br>
+           <i class="fab fa-google-plus-g"></i><a href="#">Gpa Elevator</a><br>
+           <i class="fab fa-instagram"></i><a href="#">@gpaelevator</a><br>
+           <i class="fab fa-youtube"></i><a href="#">Gpa Elevator</a>
+         </div>
+       </div>
+    </div>
+               <div  id="footer__connect-copyrightSection" >
+                   <hr class="footer__connect-copyrightSection_rule">
+                     <h4>All rights reserved gpa elevator copyright &copy; 2019</h4>
+               </div>
+             </footer>
+</div>
+
+
+
+
+  <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/popper.min.js"></script>
+  <script type="text/javascript" src="../js/all.js"></script>
+</body>
+  </html>

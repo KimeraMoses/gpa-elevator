@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MAKERERE UNIVERSITY | Gpa Elevator</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<script type="text/javascript">   <!--Linking the search button to google-->
+      function searchit() {
+           document.getElementById('gpa_elevator').href=
+           (("https://www.google.com/search?q=")+
+           (document.getElementById("search-box-input").value));
+      }
+</script>
+
+<body>
+  <div class="banner">
+      <div class="search_box">
+          <input type="checkbox" class="search-box_checkbox" id="search-toggle" autocomplete="off">
+          <label for="search-toggle" class="search-button">
+              <i class="search_icon-close fas fa-times"></i>
+            <i class="search_icon fas fa-search"></i></label>
+    
+          <div class="search_box-background">&nbsp;</div>
+           <form action="index.html" class="search_box-form">
+             <input type="text" class="search_box-input" id="search_box-input" placeholder="Type to search..">
+             <button  class="search_box-submit_btn" onkeypress="searchit">
+              <a  href="" id="gpa_elevator" onclick="searchit()" onkeypress="searchit()"><i class="fas fa-search"></i></a>
+              </button>
+           </form>
+        </div>
+
+    <!--USERS SIGNUP-LOGIN SECTION STARTS HERE-->
+  <div class="container-fluid login-signup-section">
+    <div class="container-fluid login-signup-section">
+      <a href="#"  class="btn login-signup-section-btn" data-toggle="modal" data-target="#exampleModalCenter-login" >LOGIN</a>
+      <a href="#" class="btn login-signup-section-btn" data-toggle="modal" data-target="#exampleModalCenter-sign-up" >SIGN UP</a>
+    </div>
+    <!-- Modal-->
+    <div class="modal fade" id="exampleModalCenter-login" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">LOGIN FORM</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="content center">
+              <form class="" action="#" method="post">
+
+                <b><label for="username" class="label">Username or Email:</label></b><br>
+                <div class="input-field">
+                  <i class="form-icon fas fa-user"></i>
+                  <input type="text" id="username" class="form-control-text" placeholder="Username or Email">
+                </div>
+
+                  <b><label for="studentnumber">Student Number:</label></b><br>
+                  <div class="input-field">
+                  <i class="form-icon fas fa-graduation-cap"></i>
+                  <input type="text" id="studentnumber" class="form-control-text" placeholder="Student Number">
+                </div>
+                <b><label for="pass">Password:</label></b><br>
+                <div class="input-field">
+                  <i class="form-icon fas fa-user-lock"></i>
+                  <input type="password" id="pass" class="form-control-text" placeholder="Password">
+                </div><br>
+                <div class="input-field-Remember">
+                  <input type="checkbox" id="check" value="">
+                  <label for="check">Remember me</label>
+                </div>
+                <div class="container-fluid  login-submit-section">
+                  <b><button type="submit" class="btn btn-login_submit btn-lg" >LOGIN</button></b><br>
+                    <a href="#" class="Forgot-password">Forgot Password?</a>
+                </div>
+
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!--sign up section-->
+  <div class="modal fade" id="exampleModalCenter-sign-up" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">SIGN UP FORM</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body modal-body-signup">
+        <div class="content center">
+          <form class="mb-4" action="#" method="post">
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-user"></i>
+                <input type="sign-up-text-box" class="form-control-text" id="firstname" placeholder="FirstName" required >
+              </div>
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-user"></i>
+                <input type="sign-up-text-box" class="form-control-text" id="lastname" placeholder="LastName" required >
+              </div>
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-graduation-cap"></i>
+                <input type="sign-up-text-box" class="form-control-text" id="usercourse" placeholder="What's Your Course?" required >
+              </div>
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-clock"></i>
+                <input type="sign-up-text-box" class="form-control-text" id="useryear-of-study" placeholder="Which year?" required >
+              </div>
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-graduation-cap"></i>
+                <input type="sign-up-text-box" class="form-control-text" id="studentnumber" placeholder="Student Number" required >
+              </div>
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-phone-alt"></i>
+                <input type="sign-up-text-box" class="form-control-text" id="usercontact" placeholder="Phone Number" required >
+              </div>
+
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-envelope"></i>
+                <input type="sign-up-text-box" class="form-control-text" id="useremail" placeholder="Username@gmail.com" required >
+              </div>
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-user-lock"></i>
+                <input type="password" class="form-control-text" id="pass" placeholder="Password" required >
+              </div>
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-user-lock"></i>
+                <input type="password" class="form-control-text" id="pass" placeholder="Confirm password" required >
+              </div>
+            <b><button type="submit" class="btn btn-signup_submit btn-lg" >Submit</button></b>
+          </form>
+        </div>
+      </div>
+      <div class="container-fluid modal-footer signup_login_footer">
+        <h5>Already have an account?</h5> <h4><a href="#exampleModalCenter-login" class="login_footer_link" data-toggle="modal" data-target="#exampleModalCenter-login"> Sign in</a></h4>
+    </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <!--USERS SIGNUP-LOGIN SECTION END HERE-->
+
+
+    <header>
+      <div class="header__gpa-logo"><a href="file:///D:/gpa_elevator/html/index.html"><img id="header__img" src="../img/elevator-logo.png"/></a></div>
+     
+    </header>
+<div class="container-fluid" id="universitynamebox">
+    <h3><b>MAKERERE UNIVERSITY</b></h3>
+  </div>
+  <div class="container-fluid">
+  <div class="row text-center">
+      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8" id="faculties">
+        <div class="faculties">
+        <strong><h3 class="title">Choose Your College </h3></strong>
+        <div class="menus">
+                   <ul class="menu">
+                <li class="menu-item" id="menu-item-first-child"><a href="cedat.html">College of Engineering, Design, Art and Technology(CEDAT)</a></li>
+                <li class="menu-item"><a href="#">Makerere College of Health Science(Mak-CHS)</a></li>
+                <li class="menu-item"><a href="#">College of Humanity and Social Science(CHUSS)</a></li>
+                <li class="menu-item"><a href="#">College of Business And Management Sciences(CoBAMS) </a></li>
+                <li class="menu-item"><a href="#">College of Computing and Information science(CoCIS)</a></li>
+                <li class="menu-item"><a href="CoVAB.html">College of Veterinary Medicine, Animal Resources & Biosecurity(CoVAB)</a></li>
+                <li class="menu-item"><a href="#">College of Education and External Studies(CEES)</a></li>
+                <li class="menu-item"><a href="#">College of Natural Science(CoNAS)</a></li>
+                <li class="menu-item"><a href="#">College of Agriculture and Environmental Science(CAES)</a></li>
+                <li class="menu-item"><a href="#">School of Law</a></li>
+                  </ul>
+        </div>
+     </div>
+   </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4" id="university_links" >
+        <div class="University-links">
+            <img id="university_links-img" src="../img/muk-logo.png" alt="Makerere University"><span><strong><h3 class="title">Quick Links</h3></strong></span>
+        <div class="links">
+                   <ul class="link">
+                <li class="link-item" id="link-item-first-child"><a href="index.html">Gpa Elevator Home Page</a></li>
+                <li class="link-item"><a href="https://mak.ac.ug/">University Website</a></li>
+                <li class="link-item"><a href="https://student.kyu.ac.ug/portal-1.6/?cache">Students Portal</a></li>
+                <li class="link-item"><a href="https://kyu.ac.ug/kyambogo-university-map/">University Location</a></li>
+                <li class="link-item"><a href="https://muele/">e-Learning</a></li>
+                <li class="link-item"><a href="https://admissions.mak.ac.ug/">Admissions Portal</a></li>
+                <li class="link-item"><a href="https://mak.ac.ug/scholarship/">Scholarship</a></li>
+                  </ul>
+        </div>
+         </div>
+      </div>
+      </div>
+    </div>
+<!--<div class="container-fluid " id="list">
+  <div class="row welcome text-left">
+      <div class="container-fluid"><h1 display-4>List of active University</h1></div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" id="first-list">
+      <p class="lead">
+        <a href="#">Makerere University[MUK]</a><br/>
+        <a href="#">Kyambogo University[KYU]</a><br/>
+        <a href="#">Ndejje University[NDU]</a><br/>
+        <a href="#">Nkumba University[NKU]</a><br/>
+        <a href="#">Bugema University[BU]</a><br/>
+  	    <a href="#">Busitema university[BUS]</a><br/>
+  	    <a href="#">Gulu university[GU]</a><br/>
+        </p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <p class="lead">
+  	    <a href="#">Muni university[MU]</a><br/>
+  	    <a href="#">Kabale university[KABU]</a><br/>
+  	    <a href="#">Lira university[LU]</a><br/>
+        <a href="#">Uganda Christian University[UCU]</a><br/>
+        <a href="#">Makerere University Business School[MUBS]</a><br/>
+        <a href="#">Mbarara University of Science and Technology[MUST]</a><br/>
+       </p>
+    </div>
+  </div>
+</div>-->
+  <!--  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+      <a href="#"><button type="button" class="btn btn-outline-secondary" id="but">More</button></a>
+    </div>
+  </div>
+</div>-->
+<!--news trending-->
+<div class="container-fluid" id="news">
+  <h1><i>News Trending</i></h1>
+</div>
+<div class="container-fluid padding" >
+<div class="row text-center padding" >
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4" >
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+         <div class="carousel-inner">
+          <div class="carousel-item active" id="muk">
+            <img id="img1" src="../img/kyu-logo.jpg" alt="sorry">
+            <h3><strong>Faculty of Arts and Social Sciences</strong></h3>
+            <hr class="rule">
+            <p>3rd August 2019 is the begining of the fresher's orientation week and for the entire university the semester begins on 10th August 2019-by Guild press
+            <br>3rd Sida-Bright International Summer School Closes at CoCIS-30/07/2019</p>
+          </div>
+          <div class="carousel-item" id="busitema">
+            <img id="img1" src="../img/kyu-logo.jpg" alt="sorry">
+            <h3>Faculty of Education</h3>
+            <hr class="rule">
+            <p>One of the former contestant for Guild presidency Mukisa goes missing. The latest news that we have gotten today the 2nd/06/2019 shows that,Mukisa Joshua W was discovered but not in a good condition.We shall keep you updated</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+          <div class="carousel-inner">
+           <div class="carousel-item active" id="nkumba">
+             <img id="img1" src="../img/kyu-logo.jpg" alt="Nkumba University">
+             <h3>Faculty of Engineering</h3>
+             <hr class="rule">
+             <p>One of the former contestant for Guild presidency Mukisa goes missing. The latest news that we have gotten today the 2nd/06/2019 shows that,Mukisa Joshua W was discovered but not in a good condition.We shall keep you updated</p>
+           </div>
+           <div class="carousel-item" id="KIU">
+             <img id="img1" src="../img/kyu-logo.jpg" alt="sorry">
+             <h3>Faculty of Science</h3>
+             <hr class="rule">
+             <p>One of the former contestant for Guild presidency Mukisa goes missing. The latest news that we have gotten today the 2nd/06/2019 shows that,Mukisa Joshua W was discovered but not in a good condition.We shall keep you updated</p>
+           </div>
+         </div>
+       </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4" >
+          <div class="">
+            <h2><strong>Current On the Notice Board</strong></h2>
+          </div>
+      <div class=" widget_notice_board_widget widget-none" id="notice_board_widget-4">
+        <div class="msnb_notice scroll-up">
+            <ul class="notice-list"> <strong>Kyambogo University</strong>
+              <li> Semester One 2019/2020 Academic Year commences on August 03, 2019 and will end on December 08, 2019.</li>
+              <li>Semester One 2019/2020 Academic Year, examinations are scheduled to begin on November 18<sup>th</sup> 2019 and end on December 08th 2019.</li>
+              <li> Semester Two 2019/2020 Academic Year commences on January 11, 2020, and will end on May 10, 2020.</li>
+              <li> Semester Two 2019/2020 Academic Year, examinations are scheduled to begin on April 13<sup>th</sup> 2020 and end on May 03<sup>rd</sup> 2020.</li>
+              <!--<li> <a href="#" target="_blank">Dates for the Commencement of Semester One 2019/2020 Academic Year</a></li>-->
+
+             <strong>Makerere University</strong>
+              <li> Semester One 2019/2020 Academic Year commences on August 03, 2019 and will end on December 08, 2019.</li>
+              <li>Semester One 2019/2020 Academic Year, examinations are scheduled to begin on November 18<sup>th</sup> 2019 and end on December 08th 2019.</li>
+              <li> Semester Two 2019/2020 Academic Year commences on January 11, 2020, and will end on May 10, 2020.</li>
+              <li> Semester Two 2019/2020 Academic Year, examinations are scheduled to begin on April 13<sup>th</sup> 2020 and end on May 03<sup>rd</sup> 2020.</li>
+            </ul>
+      </div>
+      </div>
+    </div>
+
+  </div>
+ </div>
+<!--DISCLAIMER-->
+<div class="container-fluid padding" id="disclaimer">
+  <div class="mox text-center">
+  <div class="col-12">
+    <h1 display-4>Disclaimer</h1>
+    <hr class="rule">
+  </div>
+    <div class="col-12">
+     <p class="">Please note that pastpapers might slightly be different in setting and format to the exams and test that you are preparing for. The lecturers have all the rights to completely change the format and the questions to news ones(<b>Can be encountered but on rare occassions</b>) that have never appeared</p>
+     <hr class="disclaimer-hr">
+    </div>
+  </div>
+  </div>
+<div class="news-letter">
+  <div class="skew-funding-content">
+                <div class="bg-funding">
+                <div class="container unskew-funding-content">
+                  <br>
+                    <p>
+                     </p><h4><svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" data-prefix="far" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg><!-- <i class="far fa-clock"></i> --> Timeline</h4>
+                      The Inter-disciplinary PhD by Research programme in the fields of Historical Humanities and Humanistic Social Sciences is a full-time that lasts three years, which starts in July 2019 and ends in June 2020. Successful candidates will develop a full proposal with the help of a supervisor and register with the College of Humanities and Social Sciences before full admission as a student of Makerere University by the Directorate of Research and Graduate Training before the commencement of their PhD programme.
+
+                    <p></p>
+                  <br>
+                </div>
+              </div>
+        </div>
+</div>
+  <!--connect-->
+  <div class="container-fluid padding">
+    <div class="row text-center padding">
+
+    </div>
+  </div>
+  <footer>
+    <div class="container-fluid padding">
+      <div class="row text-center">
+        <div class="col-md-6">
+          <h4>Contact Us</h4>
+          <hr class="rule">
+          <p>Tel:+256-778451025<br>+256-759130054<br>
+          Email us: <a href="#">gpaelevator@gmail.com</a><br>
+          Find Us: <a href="#">Kampala,Uganda<br>
+          Makerere University</p></a>
+        </div>
+        <div class="col-md-6">
+          <h4>Connect</h4>
+          <hr class="rule">
+          <a href="#"><i class="fab fa-facebook"></i>Gpa Elevator</a><br>
+          <a href="#"><i class="fab fa-twitter"></i>@gpaelevator</a><br>
+          <a href="#"><i class="fab fa-google-plus-g"></i>Gpa Elevator</a><br>
+          <a href="#"><i class="fab fa-instagram"></i>@gpaelevator</a><br>
+          <a href="#"><i class="fab fa-youtube"></i>Gpa Elevator</a>
+        </div>
+      </div>
+      </div>
+      <div class="container-fluid" id="copy" >
+        <div class="col-12">
+            <h4>gpa elevator copyright &copy; 2019</h4>
+        </div>
+      </div>
+
+  </footer>
+</div><button onclick="topFunction()" id="back-to-top" title="Back to top"><i class="back-2-top_icon fas fa-arrow-up"></i></button>
+
+
+
+
+  <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/popper.min.js"></script>
+  <script type="text/javascript" src="../js/all.js"></script>
+  <script type="text/javascript" src="../js/elevator.js"></script>
+  <link rel="stylesheet" href="../css/media-queries.css">
+  <link rel="stylesheet" id="msnb_notice_style-css" href="../css/msnb_style.css" type="text/css" media="all">
+
+</body>
+  </html>

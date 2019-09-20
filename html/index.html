@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name = "viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Easily accessible and reliable online academic materials for college/university students">
+    <meta name="keywords" content="cgpa,online academic materials,university students,college,past papers,lecture notes">
+    <meta name="author" content="kimera moses,mubiru isaac">
+    <title>GPA ELEVATOR | Welcome</title>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+    <link rel="dns-prefetch" href="https://s.w.org/">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+
+</head>
+<script type="text/javascript">
+  function searchit() {
+       document.getElementById('gpa_elevator').href=
+       (("https://www.google.com/search?q=")+
+       (document.getElementById("search_box-input").value));
+  }
+</script>
+
+<body>
+  <div class="banner">
+
+      <div class="search_box">
+          <input type="checkbox" class="search-box_checkbox" id="search-toggle" autocomplete="off">
+          <label for="search-toggle" class="search-button">
+              <i class="search_icon-close fas fa-times"></i>
+            <i class="search_icon fas fa-search"></i></label>
+
+          <div class="search_box-background">&nbsp;</div>
+           <form action="index.html" class="search_box-form">
+             <input type="text" class="search_box-input" id="search_box-input" placeholder="Type to search..">
+             <button  class="search_box-submit_btn" onkeypress="searchit">
+              <a  href="" id="gpa_elevator" onclick="searchit()" onkeypress="searchit()"><i class="fas fa-search"></i></a>
+              </button>
+           </form>
+        </div>
+
+    <!--USERS SIGNUP-LOGIN SECTION STARTS HERE-->
+  <div class="container-fluid login-signup-section">
+    <div class="container-fluid login-signup-section">
+      <a href="#"  class="btn login-signup-section-btn" data-toggle="modal" data-target="#exampleModalCenter-login" >LOGIN</a>
+      <a href="#" class="btn login-signup-section-btn" data-toggle="modal" data-target="#exampleModalCenter-sign-up" >SIGN UP</a>
+    </div>
+    <!-- Modal-->
+    <div class="modal fade" id="exampleModalCenter-login" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">LOGIN FORM</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="content center">
+              <form class="" action="#" method="post">
+
+                <b><label for="username" class="label">Username or Email:</label></b><br>
+                <div class="input-field">
+                  <i class="form-icon fas fa-user"></i>
+                  <input type="text" id="username" class="form-control-text" placeholder="Username or Email">
+                </div>
+
+                  <b><label for="studentnumber">Student Number:</label></b><br>
+                  <div class="input-field">
+                  <i class="form-icon fas fa-graduation-cap"></i>
+                  <input type="text" id="studentnumber" class="form-control-text" placeholder="Student Number">
+                </div>
+                <b><label for="pass">Password:</label></b><br>
+                <div class="input-field">
+                  <i class="form-icon fas fa-user-lock"></i>
+                  <input type="password" id="pass" class="form-control-text" placeholder="Password">
+                </div><br>
+                <div class="input-field-Remember">
+                  <input type="checkbox" id="check" value="">
+                  <label for="check">Remember me</label>
+                </div>
+                <div class="container-fluid  login-submit-section">
+                  <b><button type="submit" class="btn btn-login_submit btn-lg" >LOGIN</button></b><br>
+                    <a href="#" class="Forgot-password">Forgot Password?</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--sign up section-->
+<div class="modal fade" id="exampleModalCenter-sign-up" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">SIGN UP FORM</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body modal-body-signup">
+        <div class="content center">
+          <form class="mb-4" action="#" method="post">
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-user"></i>
+                <input type="sign-up-text-box" class="form-control-text" id="firstname" placeholder="FirstName" required >
+              </div>
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-user"></i>
+                <input type="sign-up-text-box" class="form-control-text" id="lastname" placeholder="LastName" required >
+              </div>
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-graduation-cap"></i>
+                <input type="sign-up-text-box" class="form-control-text" id="usercourse" placeholder="What's Your Course?" required >
+              </div>
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-clock"></i>
+                <input type="sign-up-text-box" class="form-control-text" id="useryear-of-study" placeholder="Which year?" required >
+              </div>
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-graduation-cap"></i>
+                <input type="sign-up-text-box" class="form-control-text" id="studentnumber" placeholder="Student Number" required >
+              </div>
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-phone-alt"></i>
+                <input type="sign-up-text-box" class="form-control-text" id="usercontact" placeholder="Phone Number" required >
+              </div>
+
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-envelope"></i>
+                <input type="sign-up-text-box" class="form-control-text" id="useremail" placeholder="Username@gmail.com" required >
+              </div>
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-user-lock"></i>
+                <input type="password" class="form-control-text" id="pass" placeholder="Password" required >
+              </div>
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-user-lock"></i>
+                <input type="password" class="form-control-text" id="pass" placeholder="Confirm password" required >
+              </div>
+            <b><button type="submit" class="btn btn-signup_submit btn-lg" >Submit</button></b>
+          </form>
+        </div>
+      </div>
+      <div class="container-fluid modal-footer signup_login_footer">
+        <h5>Already have an account?</h5> <h4><a href="#exampleModalCenter-login" class="login_footer_link" data-toggle="modal" data-target="#exampleModalCenter-login"> Sign in</a></h4>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--USERS SIGNUP-LOGIN SECTION END HERE-->
+
+
+
+    <header>
+      <div class="header__gpa-logo"><a href="file:///D:/gpa_elevator/html/index.html"><img id="header__img" src="../img/elevator-logo.png"/></a></div>
+    </header>
+    <div class="container-fluid main-menu-nav_bar">
+        <nav class="main-menu_nav">
+            <div>
+                <input type="checkbox" class="menu_toggle-checkbox" id="menu_toggle" autocomplete="off">
+                <label for="menu_toggle" class="menu_button">
+                 <i class="menu-toggle-open fas fa-bars"></i>
+                 <i class="menu-toggle-close fas fa-times" title="Dismiss"></i>
+                </label>
+                <h5>MENU</h5>
+                </div>
+            <ul id="mega_main_menu_ul" class="mega_main_menu_ul">
+                    <li id="menu-item-0001" class="menu-item  menu-item-0001 menu-item-hasno-children ">
+                    <a href="index.html" class="menu-item-link menu-item-0001-link ">HOME</a>
+                    </li>
+                    <li id="menu-item-0002" class="menu-item  menu-item-0002 menu-item-has-children">
+                      <a href="#" class="menu-item-link menu-item-0002-link " title="Makerere University"> MUK  <i class="fas fa-caret-down"></i></a>
+                      <ul class="sub-menu menu-item-0002-sub-menu sub-menu-dropdown" aria-labelledby="colleges">
+                         <li><a class="menu-item-0003 menu-item-dropdown-item" href="file:///D:/gpa_elevator/html/cedat.html">CEDAT</a></li>
+                         <li><a class="menu-item-0004 menu-item-dropdown-item" href="COCIS.html">CoCIS</a></li>
+                         <li><a class="menu-item-0005 menu-item-dropdown-item" href="CoVAB1.html">CoVAB</a></li>
+                         <li><a class="menu-item-0006 menu-item-dropdown-item" href="cobams1.html">CoBAMS</a></li>
+                         <li><a class="menu-item-0007 menu-item-dropdown-item" href="makCHS.html">Mak-CHS</a></li>
+                         <li><a class="menu-item-0008 menu-item-dropdown-item" href="CoNAS.html">CoNAS</a></li>
+                         <li><a class="menu-item-0009 menu-item-dropdown-item" href="chuss.html"> CHUSS</a></li>
+                         <li><a class="menu-item-0010 menu-item-dropdown-item" href="CEES.html">CEES</a></li>
+                         <li><a class="menu-item-0011 menu-item-dropdown-item" href="CAES.html">CAES</a></li>
+                         <li><a class="menu-item-0012 menu-item-dropdown-item" href="law-muk.html">School Of Law</a></li>
+                       </ul>
+                    </li>
+
+                    <li id="menu-item-0013" class="menu-item  menu-item-0013 menu-item-has-children menu-item-has-grandchildren">
+                      <a href="#" class="menu-item-link menu-item-0013-link " title="Kyambogo University"> KYU <i class="fas fa-caret-down"></i></a>
+                      <ul class="sub-menu menu-item-0013-sub-menu sub-menu-dropdown " aria-labelledby="colleges">
+                        <li><a class="menu-item-0015  menu-item-dropdown menu-item-has-children " href="#">Faculty of Arts & S.sci.</a>
+                          <ul class="sub-menu menu-item-0015-sub-menu dropright-menu">
+                            <li class="menu-item-0026 menu-item-dropleft-item"><i><a href="#">Department of Economics and Statistics</a> </i></li>
+                            <li class="menu-item-0027 menu-item-dropleft-item"><i><a href="#">Department of Development Studies</a> </i></li>
+                            <li class="menu-item-0028 menu-item-dropleft-item"><i><a href="#">Department of Geography and Social Studies</a> </i></li>
+                            <li class="menu-item-0029 menu-item-dropleft-item"><i><a href="#">Department of History and Political Science</a> </i></li>
+                            <li class="menu-item-0030 menu-item-dropleft-item"><i><a href="#">Department of Languages and Communications</a> </i></li>
+                            <li class="menu-item-0032 menu-item-dropleft-item"><i><a href="#">Department of Religious Studies and Philosophy </a> </i></li>
+                            <li class="menu-item-0033 menu-item-dropleft-item"><i><a href="#">Department of Music and Performing Arts</a> </i></li>
+                            <li class="menu-item-0034 menu-item-dropleft-item"><i><a href="#">Department of Sociology and Social Administration</a> </i></li>
+                            <li class="menu-item-0031 menu-item-dropleft-item"><i><a href="#">Department of Literature</a> </i></li>
+                          </ul>
+                        </li>
+                         <li><a class="menu-item-0014  menu-item-dropdown menu-item-has-children" href="#">Faculty of Engineering</a>
+                          <ul class="sub-menu menu-item-0014-sub-menu dropright-menu">
+                              <li class="menu-item-0021 menu-item-dropleft-item"><i><a href="#">Department of Civil and Building Engineering</a></i></li>
+                              <li class="menu-item-0022 menu-item-dropleft-item"><i><a href="#">Department of Mechanical and Production Engineering</a></i></li>
+                              <li class="menu-item-0023 menu-item-dropleft-item"><i><a href="Department-of-Electrical-Electronics-Engineering.html">Department of Electrical & Electronics Engineering</a></i></li>
+                              <li class="menu-item-0024 menu-item-dropleft-item"><i><a href="#">Department of Lands and Architectural Studies</a></i></li>
+                          </ul>
+                         </li>
+                         <li><a class="menu-item-0016 menu-item-dropdown menu-item-has-children" href="0#">Faculty Of Education</a>
+                           <ul class="sub-menu menu-item-0016-sub-menu dropright-menu">
+                             <li class="menu-item-0035 menu-item-dropleft-item"><i><a href="#">Department of Psychology</a> </i></li>
+                             <li class="menu-item-0036 menu-item-dropleft-item"><i><a href="#">Department of Foundations of Education</a> </i></li>
+                             <li class="menu-item-0037 menu-item-dropleft-item"><i><a href="#">Department of Educational Planning and Management</a> </i></li>
+                             <li class="menu-item-0038 menu-item-dropleft-item"><i><a href="#">Department of Teacher Education</a> </i></li>
+                             <li class="menu-item-0039 menu-item-dropleft-item"><i><a href="#">Department of Early Childhood Education</a> </i></li>
+                             <li class="menu-item-0040 menu-item-dropleft-item"><i><a href="#">Department of Curriculum, Teaching, Instruction and Media Studies</a> </i></li>
+                             <li class="menu-item-0041 menu-item-dropleft-item"><i><a href="#">Department of Distance Education </a> </i></li>
+                           </ul>
+                         </li>
+                         <li><a class="menu-item-0017 menu-item-dropdown menu-item-has-children" href="#">Faculty Of Science</a>
+                           <ul class="sub-menu menu-item-0017-sub-menu dropright-menu">
+                             <li class="menu-item-0042 menu-item-dropleft-item"><i><a href="department-of-computer-science.html">Department of Computer Science</a> </i></li>
+                             <li class="menu-item-0043 menu-item-dropleft-item"><i><a href="#">Department of Biological Science</a> </i></li>
+                             <li class="menu-item-0044 menu-item-dropleft-item"><i><a href="#">Department of SportScience</a> </i></li>
+                             <li class="menu-item-0045 menu-item-dropleft-item"><i><a href="#">Department of Chemistry</a> </i></li>
+                             <li class="menu-item-0046 menu-item-dropleft-item"><i><a href="#">Department of Mathematics</a> </i></li>
+                             <li class="menu-item-0047 menu-item-dropleft-item"><i><a href="#">Department of Food Processing</a> </i></li>
+                             <li class="menu-item-0048 menu-item-dropleft-item"><i><a href="#">Department of Physics </a> </i></li>
+                           </ul>
+                         </li>
+                         <li><a class="menu-item-0018 menu-item-dropdown menu-item-has-children" href="#">Faculty Of Voc.Studies</a>
+                           <ul class="sub-menu menu-item-0018-sub-menu dropright-menu">
+                             <li class="menu-item-0049 menu-item-dropleft-item"><i><a href="#">Department of Agriculture</a> </i></li>
+                             <li class="menu-item-0050 menu-item-dropleft-item"><i><a href="#">Department of Industrial Art & Design</a> </i></li>
+                             <li class="menu-item-0051 menu-item-dropleft-item"><i><a href="#">Department of Human Nutrition and Home Economics</a> </i></li>
+                           </ul>
+                         </li>
+                         <li><a class="menu-item-0019 menu-item-dropdown menu-item-has-children" href="#">Faculty Of Special Needs</a>
+                           <ul class="sub-menu menu-item-0019-sub-menu dropright-menu">
+                             <li class="menu-item-0052 menu-item-dropleft-item"><i><a href="#">Department of Adult and Community Education</a> </i></li>
+                             <li class="menu-item-0053 menu-item-dropleft-item"><i><a href="#">Department of Community and Disability Studies</a> </i></li>
+                             <li class="menu-item-0054 menu-item-dropleft-item"><i><a href="#">Department of Special Needs Studies</a> </i></li>
+                           </ul>
+                         </li>
+                         <li><a class="menu-item-0020 menu-item-dropdown menu-item-has-children" href="#">Sch. Management & Ent</a>
+                           <ul class="sub-menu menu-item-0020-sub-menu dropright-menu">
+                             <li class="menu-item-0055 menu-item-dropleft-item"><i><a href="#">Department of Accounting and Finance</a> </i></li>
+                             <li class="menu-item-0056 menu-item-dropleft-item"><i><a href="#">Department of Business Administration and Entrepreneurship</a> </i></li>
+                             <li class="menu-item-0057 menu-item-dropleft-item"><i><a href="#">Department of Management Science</a> </i></li>
+                             <li class="menu-item-0058 menu-item-dropleft-item"><i><a href="#">Department of Procurement and Marketing</a> </i></li>
+                           </ul>
+                         </li>
+                       </ul>
+                    </li>
+
+                    <li id="menu-item-0059" class="menu-item  menu-item-0059 menu-item-has-children">
+                      <a href="#" class="menu-item-link menu-item-0059-link " title="Makerere University Business School"> MUBS <i class="fas fa-caret-down"></i></a>
+                      <ul class="sub-menu menu-item-0059-sub-menu sub-menu-dropdown" aria-labelledby="colleges">
+                        <li><a class="menu-item-0060 menu-item-dropdown" href="faculty of computting and informatics-mubs.html">Faculty Of Computing & Informatics</a></li>
+                        <li><a class="menu-item-0061 menu-item-dropdown" href="#">Faculty of Marketing & Hospitality Management</a></li>
+                        <li><a class="menu-item-0062 menu-item-dropdown" href="#">Faculty Of Entrepreneurship & Business Admin.</a></li>
+                        <li><a class="menu-item-0063 menu-item-dropdown" href="Faculty of Commerce-mubs.html">Faculty of Commerce</a></li>
+                        <li><a class="menu-item-0064 menu-item-dropdown" href="#">Faculty Vocational & Distance Studies</a></li>
+                        <li><a class="menu-item-0065 menu-item-dropdown" href="faculty of economics,energy and mgt sci-mubs.html">Faculty Of Economics,Energy & Management Sci.</a></li>
+                        <li><a class="menu-item-0066 menu-item-dropdown" href="Faculty of management.html">Faculty of Management</a></li>
+                      </ul>
+                         </li>
+
+                         <li id="menu-item-0067" class="menu-item  menu-item-0067 menu-item-has-children">
+                           <a href="#" class="menu-item-link menu-item-0067-link " title="Mbarara University Of Science & Technology"> MUST <i class="fas fa-caret-down"></i></a>
+                           <ul class="sub-menu menu-item-0067-sub-menu sub-menu-dropdown" aria-labelledby="colleges">
+                             <li><a class="menu-item-0068 menu-item-dropdown" href="#">Faculty Of Medicine</a></li>
+                             <li><a class="menu-item-0069 menu-item-dropdown" href="#">Faculty Of Science</a></li>
+                             <li><a class="menu-item-0070 menu-item-dropdown" href="faculty of computting and informatics-mubs.html">Faculty Of Computing & Informatics</a></li>
+                             <li><a class="menu-item-0071 menu-item-dropdown" href="#">Faculty Of Interdisciplinary Stud.</a></li>
+                             <li><a class="menu-item-0072 menu-item-dropdown" href="#">Faculty Of Business & Mgt Science</a></li>
+                             <li><a class="menu-item-0073 menu-item-dropdown" href="#">Faculty Of Applied Science & Tech.</a></li>
+                           </ul>
+                          </li>
+                          <li id="menu-item-0074" class="menu-item  menu-item-0074 menu-item-has-children">
+                            <a href="#" class="menu-item-link menu-item-0074-link" title="Ndejje University">NDEJJE <i class="fas fa-caret-down"></i></a>
+                            <ul class="sub-menu menu-item-0074-sub-menu sub-menu-dropdown" aria-labelledby="colleges">
+                            <li><a class="menu-item-0078 menu-item-dropdown-item" href="Faculty of Engineering & Survey.html">Faculty Of Engineering & Survey</a></li>
+                            <li><a class="menu-item-0079 menu-item-dropdown-item" href="#">Faculty Of Basic Sciences & I.T</a></li>
+                            <li><a class="menu-item-0080 menu-item-dropdown-item" href="Faculty of Education-ndu.html">Faculty Of Education</a></li>
+                            <li><a class="menu-item-0081 menu-item-dropdown-item" href="#">Faculty Of Social Sciences</a></li>
+                            <li><a class="menu-item-0082 menu-item-dropdown-item" href="#">Faculty Of Arts</a></li>
+                            <li><a class="menu-item-0083 menu-item-dropdown-item" href="#">Faculty Of Business Admin & Management</a></li>
+                            <li><a class="menu-item-0084 menu-item-dropdown-item" href="Faculty Of Environmental & Agricultural Sciences.html"> Faculty Of Environment & Agric.Sciences</a></li>
+                          </ul>
+                          </li>
+                          <li id="menu-item-0075" class="menu-item  menu-item-0075 menu-item-has-children">
+                            <a href="#" class="menu-item-link menu-item-0075-link" title="Nkumba University"> NKUMBA <i class="fas fa-caret-down"></i></a>
+                            <ul class="sub-menu menu-item-0075-sub-menu sub-menu-dropdown" aria-labelledby="colleges">
+                            <li><a class="menu-item-0085 menu-item-dropdown-item" href="#">Schoop Of Business Admin</a></li>
+                            <li><a class="menu-item-0086 menu-item-dropdown-item" href="#">School Of Law</a></li>
+                            <li><a class="menu-item-0087 menu-item-dropdown-item" href="#">School Of Commercial Industrial Art & Design</a></li>
+                            <li><a class="menu-item-0088 menu-item-dropdown-item" href="#">School Of Educ, Humanities & Sciences</a></li>
+                            <li><a class="menu-item-0089 menu-item-dropdown-item" href="#">School Of Social Sciences</a></li>
+                            <li><a class="menu-item-0090 menu-item-dropdown-item" href="#">School Of Sciences</a></li>
+                          </ul>
+                          </li>
+                          <li id="menu-item-0076"  class="menu-item  menu-item-0076 menu-item-has-children">
+                            <a href="#" class="menu-item-link menu-item-0076-link" title="Uganda Christian University"> UCU <i class="fas fa-caret-down"></i></a>
+                            <ul class="sub-menu menu-item-0076-sub-menu sub-menu-dropdown" aria-labelledby="colleges">
+                            <li><a class="menu-item-0091 menu-item-dropdown-item" href="#">Faculty Of Science & Tech.</a></li>
+                            <li><a class="menu-item-0092 menu-item-dropdown-item" href="#">Faculty Of Business & Admin.</a></li>
+                            <li><a class="menu-item-0093 menu-item-dropdown-item" href="#">Faculty Of Education & Arts</a></li>
+                            <li><a class="menu-item-0094 menu-item-dropdown-item" href="#">Faculty Of Journalism,Media &Comm.</a></li>
+                            <li><a class="menu-item-0095 menu-item-dropdown-item" href="#">Faculty Of Law</a></li>
+                            <li><a class="menu-item-0096 menu-item-dropdown-item" href="#">Faculty Of Social Sciences</a></li>
+                            <li><a class="menu-item-0097 menu-item-dropdown-item" href="#">School Of Medicine</a></li>
+                            <li><a class="menu-item-0098 menu-item-dropdown-item" href="#">School Of Theology & Divinity</a></li>
+                          </ul>
+                          </li>
+                          <li id="menu-item-0077" class="menu-item  menu-item-0077 menu-item-has-children">
+                            <a href="#" class="menu-item-link menu-item-0077-link"> OTHERS <i class="fas fa-caret-down"></i></a>
+                            <ul class="sub-menu menu-item-0077-sub-menu sub-menu-dropdown" aria-labelledby="colleges">
+                            <li><a class="menu-item-0105 menu-item-dropdown-item" href="#">Bugema University(BMU)</a></li>
+                            <li><a class="menu-item-0099 menu-item-dropdown-item" href="#">Gulu University(GU)</a></li>
+                            <li><a class="menu-item-0100 menu-item-dropdown-item" href="#">Victoria University(VU)</a></li>
+                            <li><a class="menu-item-0101 menu-item-dropdown-item" href="#">Lira University(LU)</a></li>
+                            <li><a class="menu-item-0102 menu-item-dropdown-item" href="#">Muni University(MUN)</a></li>
+                            <li><a class="menu-item-0103 menu-item-dropdown-item" href="#">Kampala UniversityKAB)</a></li>
+                            <li><a class="menu-item-0104 menu-item-dropdown-item" href="#">kampala International University(KIU)</a></li>
+                            <li><a class="menu-item-0106 menu-item-dropdown-item" href="#">Bishop Stuart University(BSU)</a></li>
+                            <li><a class="menu-item-0107 menu-item-dropdown-item" href="#">St.Lawrence University(SLAU)</a></li>
+                            <li><a class="menu-item-0108 menu-item-dropdown-item" href="#">Kabaale University(KAB)</a></li>
+                            <li><a class="menu-item-0109 menu-item-dropdown-item" href="#">Mutesa I Royal University(MRU)</a></li>
+                            <li><a class="menu-item-0110 menu-item-dropdown-item" href="#">International University Of East Africa(IUEA)</a></li>
+                            <li><a class="menu-item-0111 menu-item-dropdown-item" href="#">ISBAT University</a></li>
+                            <li><a class="menu-item-0112 menu-item-dropdown-item" href="#">Uganda Martyrs University(UMU)</a></li>
+                            <li><a class="menu-item-0113 menu-item-dropdown-item" href="#">Cavendish University Of Uganda(CUU)</a></li>
+                            <li><a class="menu-item-0114 menu-item-dropdown-item" href="#">Islamic University In Uganda(IUIU)</a></li>
+                            <li><a class="menu-item-0115 menu-item-dropdown-item" href="#">Kumi University(KUMU)</a></li>
+                            <li><a class="menu-item-0116 menu-item-dropdown-item" href="#">Busonga University(BGU)</a></li>
+                            <li><a class="menu-item-0117 menu-item-dropdown-item" href="#">Kayiwa International University(KINTU)</a></li>
+                            <li><a class="menu-item-0118 menu-item-dropdown-item" href="#">Stafford University Uganda(SIU)</a></li>
+                            <li><a class="menu-item-0119 menu-item-dropdown-item" href="#">Busitema University(BUS)</a></li>
+                          </ul>
+                          </li>
+                        <li id="menu-item-0120" class="menu-item  menu-item-0120 menu-item-hasno-children ">
+                              <a href="job.html " class="menu-item-link menu-item-0120-link ">JOBS</a>
+                        </li>
+                       </ul>
+
+
+        </nav>
+
+    </div>
+
+<div class="container-fluid" id="about-us_carousel-slider">
+  <div class="row text-center">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4" id="about-section">
+      <div class="container">
+      <strong><h3>About Us</h3></strong>
+    <hr/>
+    <p>Welcome to GPA ELEVATOR a one stop website for all university/college academic materials.This provides students of higher instutions with online access to past papers,lecture Notes and other study materials in a softcopy format. GPA ELEVATOR is under development being managed by two Makerere University students of computer engineering by names of KIMERA MOSES and MUBIRU ISAAC with an aim of simplifying the lives of university students by bringing important academic materials like past-papers and much more closer to them.<br>
+      <a href="#" class="btn btn-sm btn-more" data-toggle="modal" data-target="#exampleModalScrollable">Read More..</a>
+      <!-- Modal -->
+<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header modal-header-about-us">
+        <strong><h3 class="modal-title"  id="exampleModalScrollableTitle" >About Us</h3></strong>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body modal-body-about-us">
+        <p>
+        Welcome to GPA ELEVATOR a one stop website for all university/college academic materials.This provides students of higher instutions with online access to past papers and other study materials in a softcopy format. GPA ELEVATOR is under development being managed by two Makerere University students of computer engineering by names of KIMERA MOSES and MUBIRU ISAAC with an aim of simplifying the lives of university students by bringing important academic materials like past-papers, lecture Notes and much more closer to them.<br>
+      To fully enjoy the exciting features of Gpa elevator,sign in to create your own account that will enable you recieve information that suit your interests.If you already have an account please click the login button to get started with the amazing features of the website. Once more your are Welcome to the center of excellence.</p><br>
+      <h3 class="modal-body-mission">MISSION</h3><br>
+      <p>Our mission is to create a connection between students of different universities and simplify their life by bringing important academic materials like pastpapers,lecture Notes,links to important textbooks closer to them</p>
+      <h3 class="modal-body-vision">VISION</h3><br>
+      <p>To create a reliable, effecient, affordable and environmentally friendly way of flow of information and academic materials for all the universities in uganda. </p>
+         <hr>
+      </div>
+
+    </div>
+  </div>
+</div>
+    </div>
+    </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8" id="carousel">
+<div class="bd-example">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+           <img id="carousel_height" src="../img/graduants222.jpg" alt="group of university graduates-mak">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Welcome to Gpa Elevator</h1>
+          <p class="lead">Welcome to <b>gpa elevator</b>,have a great feel as you elevate your current gpa to the highest possible.<br>This is your only site to elevate your GPA</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img id="carousel_height" src="../img/revise2.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>All You Need Is Right Here...</h1>
+          <p class="lead">Find everything you need to revise here; past papers, Organized Lecture notes , links to important textbooks and much more...<br>All in one place...!</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img id="carousel_height" src="../img/kyu1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Your center of excellence</h1>
+          <p class="lead">After all the years at any university,everyone needs to graduate with a good CGPA and that is the perfect reason as to why you need to use Gpa Elevator.</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<!-------------------->
+<div class="container-fluid " id="services">
+  <h1>What We Offer</h1>
+</div>
+<div class="our-services">
+
+    <div class="row text-center">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4" id="col-1">
+        <div class="feature-box">
+          <i class="icon  fa fa-mobile-alt"></i> <i class="icon fa fa-tablet-alt"></i><br/>
+          <i class="icon fa fa-laptop"></i><i class="icon fa fa-desktop"></i>
+        <h3><b>Study anytime,anywhere and on any device</b></h3>
+        <p>We very well know that being a university student, many things might not go as planned and you may need to study whenever and wherever you may be.Gpa Elevator is the best partner for you. </p>
+      </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" id="col-2">
+        <div class="feature-box">
+          <i class="icon fas fa-graduation-cap"></i><span><i class="icon fa fa-certificate"></i><i class="icon fa fa-cloud-upload-alt"></i></span>
+        <h3><b>Be Part Of One's Success</b></h3>
+        <p><b>1.</b>You can easily contribute to someone's success by either answering a question asked by a fellow student or uploading any kind of university pastpaper that you may find helpfull to others.<br>
+       <b>2.</b>You can also contribute by discussing  your topics of expertise in particular course units to either individuals or a group of students who you shall be connected to through this website.</p>
+      </div>
+    </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" id="col-3">
+        <div class="feature-box">
+          <i class="icon fas fa-university"></i><span><i class="icon fa fa-search"></i></span>
+        <h3><b>Free study resources</b></h3>
+        <p>Find and download all pastpaper exams,lecture notes,assignments,links to usefull textbooks and YouTube videos,answers from fellow students, Contacts of individual students willing to help and much more.</p>
+          <a href="#header__search-box-input" class="btn btn--blue btn-primary">Get Started</a>
+      </div>
+      </div>
+  </div>
+
+</div>
+<div class="container-fluid" id="news">
+  <h1><i>News Trending</i></h1>
+</div>
+
+ <div class="container-fluid" id="social-feeds">
+   <div class="row">
+     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 twitter-handle">
+       <div class="widget widget_text widget-none" id="text-3"><h3 class="title">News on Twitter</h3>
+         <div class="textwidget">
+           <p><iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-timeline twitter-timeline-rendered"
+              style="position: relative; visibility: visible; display: inline-block; width: 350px; height: 405px; padding: 0px; border: none; max-width: 100%; min-width: 180px; margin-top: 0px; margin-bottom: 0px; min-height: 300px;"
+              data-widget-id="profile:gpaelevator" title="Twitter Timeline" src="gpatweeter-handle.html">
+           </iframe>
+           <script async="" src="../js/widgets.js.download" ></script>
+         </p>
+       </div>
+          <div class="cleaner">&nbsp;</div></div>
+        </div>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+  <div class="row">
+  <div class="container-fluid" id="news_trending_title_campus"><h3 class="title">News Around Your Campus </h3><hr></div>
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 widget widget_notice_board_widget widget-none" id="notice_board_widget-4 news_trending_col_1">
+                <div class="msnb_notice scroll-up">
+                    <ul class="notice-list">
+                      <h3><strong>Makerere University</strong> </h3> <i>Posted on 03/08/2019 by <a href="www.facebook.com/kimeramoxhus">Kimera moxhus</a></i>
+                        <li> 3rd August 2019 marked the beginning of Suubi's happiness who reported to campus with a metallic case and a big bag, Suubi has since gained popularity and support from different people around the globe after the spread of the picture taken near the university hall and our sources at Muk are showing that he may have recieved a vehicle just of recent.</li>
+                        <li>Semester One 2019/2020 Academic Year, examinations are scheduled to begin on November 18<sup>th</sup> 2019 and end on December 08th 2019.</li>
+                        <li> Semester Two 2019/2020 Academic Year commences on January 11, 2020, and will end on May 10, 2020.</li>
+                        <li> Semester Two 2019/2020 Academic Year, examinations are scheduled to begin on April 13<sup>th</sup> 2020 and end on May 03<sup>rd</sup> 2020.</li>
+
+
+                      <h3><strong>Kyambogo University</strong> </h3> <i>Posted on 02/09/2019 by <a href="#socialfeeds/gpa_elevator-kyu/fot/racheal">Nansamba Racheal</a></i>
+                      <li> Semester One 2019/2020 Academic Year commences on August 03, 2019 and will end on December 08, 2019.</li>
+                      <li>Semester One 2019/2020 Academic Year, examinations are scheduled to begin on November 18<sup>th</sup> 2019 and end on December 08th 2019.</li>
+                      <li> Semester Two 2019/2020 Academic Year commences on January 11, 2020, and will end on May 10, 2020.</li>
+                      <li> Semester Two 2019/2020 Academic Year, examinations are scheduled to begin on April 13<sup>th</sup> 2020 and end on May 03<sup>rd</sup> 2020.</li>
+                      <!--<li> <a href="#" target="_blank">Dates for the Commencement of Semester One 2019/2020 Academic Year</a></li>-->
+
+
+                    </ul>
+              </div>
+           </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 widget widget_notice_board_widget widget-none" id="notice_board_widget-4">
+            <div class="msnb_notice scroll-up">
+                <ul class="notice-list">
+                    <h3><strong>Busitema University</strong> </h3> <i>Posted on 20/09/2019 by <a href="#socialfeeds/gpaelevator_cocis/@jamira">Jamira</a></i>
+                  <li> 	Monday, August 05th to Sunday, August 11, 2019	Orientation Week for ALL Fresher Students</li>
+                  <li> <a href="#" target="_blank">TO: All Applicants for Private Entry Academic Year 2019/2020</a></li>
+                  <li> <a href="#" target="_blank">Kyambogo University 2019/2020 New Admission List</a></li>
+                  <li> <a href="#" target="_blank">The Directorate of Human Resources invites applications for the following jobs;</a></li>
+                  <li> <a href="#" target="_blank">Dates for the Commencement of Semester One 2019/2020 Academic Year</a></li>
+                  <h3><strong>Bugema University</strong> </h3> <i>Posted on 27/08/2019 by <a href="#socialfeeds/moses">Mugambwa Lawerence</a></i>
+                  <li> <a href="#" target="_blank">Guidelines for issuing out Admission Letters for Academic Year 2019/202</a></li>
+                  <li> <a href="#" target="_blank">TO: All Applicants for Private Entry Academic Year 2019/2020</a></li>
+                  <li> <a href="#" target="_blank">Kyambogo University 2019/2020 New Admission List</a></li>
+                  <li> <a href="#" target="_blank">The Directorate of Human Resources invites applications for the following jobs;</a></li>
+                  <li> <a href="#" target="_blank">Dates for the Commencement of Semester One 2019/2020 Academic Year</a></li>
+                </ul>
+          </div>
+       </div>
+    <div class="container-fluid padding" id="trend">
+    <div class="row text-center padding" >
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6" >
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+         <div class="carousel-inner">
+          <div class="carousel-item active" id="muk">
+            <img id="img1" src="../img/muk-logo.png" alt="sorry">
+            <h3><strong>Makerere University</strong></h3>
+            <hr class="rule">
+            <p>3rd August 2019 marked the beginning of Suubi's happiness who reported to campus with a metallic case and a big bag, Suubi has since gained popularity and support from different people around the globe after the spread of the picture taken near the university hall...
+            </p>
+            <i>Posted on 02/09/2019 by <a href="www.facebook.com/kimeramoxhus">Kimera Moxhus</a></i>
+          </div>
+          <div class="carousel-item" id="busitema">
+            <img id="img1" src="../img/busitema-logo.png" alt="sorry">
+            <h3>Busitema University</h3>
+            <hr class="rule">
+            <p>One of the former contestant for Guild presidency Mukisa goes missing. The latest news that we have gotten today the 2nd/06/2019 shows that,Mukisa Joshua W was discovered but not in a good condition.We shall keep you updated</p>
+            <i>Posted on 03/08/2019 by <a href="#socialfeeds/gpa_elevator-Cedat/racheal">Nansamba Racheal</a></i>
+          </div>
+          <div class="carousel-item" id="KIU">
+            <img id="img1" src="../img/logo-KIU.jpg" alt="sorry">
+            <h3>Kampala International university</h3>
+            <hr class="rule">
+            <p>One of the former contestant for Guild presidency Mukisa goes missing. The latest news that we have gotten today the 2nd/06/2019 shows that,Mukisa Joshua W was discovered but not in a good condition.We shall keep you updated</p>
+            <i>Posted on 03/08/2019 by <a href="#socialfeeds/gpa_elevator-Cedat/racheal">Nansamba Racheal</a></i>
+          </div>
+          <div class="carousel-item" id="mubs">
+            <img id="img1" src="../img/mubs-logo.png" alt="sorry">
+            <h3>MUBS</h3>
+            <hr class="rule">
+            <p>One of the former contestant for Guild presidency Mukisa goes missing. The latest news that we have gotten today the 2nd/06/2019 shows that,Mukisa Joshua W was discovered but not in a good condition.We shall keep you updated</p>
+            <i>Posted on 27/08/2019 by <a href="#socialfeeds/moses">Mugambwa Lawerence</a></i>
+          </div>
+          <div class="carousel-item" id="ndejje">
+            <img id="img1" src="../img/NDU.png" alt="sorry">
+            <h3>Ndejje University</h3>
+            <hr class="rule">
+            <p>One of the former contestant for Guild presidency Mukisa goes missing. The latest news that we have gotten today the 2nd/06/2019 shows that,Mukisa Joshua W was discovered but not in a good condition.We shall keep you updated</p>
+            <i>Posted on 27/08/2019 by <a href="#socialfeeds/gpa_elevator-Cedat/isaac">Ssemugenyi Isaac</a></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+         <div class="carousel-inner">
+          <div class="carousel-item active" id="nkumba">
+            <img id="img1" src="../img/nkumba-logo.png" alt="Nkumba University">
+            <h3>Nkumba University</h3>
+            <hr class="rule">
+            <p>One of the former contestant for Guild presidency Mukisa goes missing. The latest news that we have gotten today the 2nd/06/2019 shows that,Mukisa Joshua W was discovered but not in a good condition.We shall keep you updated</p>
+            <i>Posted on 27/08/2019 by <a href="#socialfeeds/gpa_elevator-nkumba/lbrian">Brian Lubega</a></i>
+          </div>
+          <div class="carousel-item" id="KU">
+            <img id="img1" src="../img/ku-logo.png" alt="Kampala University">
+            <h3>Kampala University</h3>
+            <hr class="rule">
+            <p>One of the former contestant for Guild presidency Mukisa goes missing. The latest news that we have gotten today the 2nd/06/2019 shows that,Mukisa Joshua W was discovered but not in a good condition.We shall keep you updated</p>
+            <i>Posted on 27/08/2019 by <a href="#socialfeeds/gpa_elevator-Cedat/zac">Mubiru Isaac</a></i>
+          </div>
+          <div class="carousel-item" id="bugema">
+            <img id="img1" src="../img/bgma-logo.jpg" alt="Bugema University">
+            <h3>Bugema University</h3>
+            <hr class="rule">
+            <p>One of the former contestant for Guild presidency Mukisa goes missing. The latest news that we have gotten today the 2nd/06/2019 shows that,Mukisa Joshua W was discovered but not in a good condition.We shall keep you updated</p>
+            <i>Posted on 27/08/2019 by <a href="#socialfeeds/gpa_elevator-Cedat/isaac">Kimera Moses</a></i>
+          </div>
+          <div class="carousel-item " id="kyu">
+            <a href="kyambogo university.html"><img id="img1" src="../img/kyu-logo.jpg" alt="Kyambogo University"></a>
+            <h3>Kyambogo University</h3>
+            <hr class="rule">
+            <p>Semester One 2019/2020 Academic Year commences on August 03, 2019 and will end on December 08, 2019<br/>source-<a href="https://kyu.ac.ug/notice/dates-for-the-commencement-of-semester-one-2019-2020-academic-year/">https://kyu.ac.ug/notice/dates-for-the-commencement-of-semester-one-2019-2020-academic-year/</a></p>
+            <i>Posted on 27/08/2019 by <a href="#socialfeeds/gpa_elevator-foe-kyu/eddie">Namanya Eddie</a></i>
+          </div>
+          <div class="carousel-item " id="gulu">
+            <img id="img1" src="../img/gulu-logo.png" alt="Gulu University">
+            <h3>Gulu University</h3>
+            <hr class="rule">
+            <p>Semester One 2019/2020 Academic Year commences on August 03, 2019 and will end on December 08, 2019<br/>source-https://kyu.ac.ug/notice/dates-for-the-commencement-of-semester-one-2019-2020-academic-year/</p>
+            <i>Posted on 27/08/2019 by <a href="#socialfeeds/gpa_elevator-Cedat/rex">Rex Emma</a></i>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+</div>
+</body>
+
+
+<footer>
+  <!--DISCLAIMER-->
+  <div class="container-fluid padding" id="disclaimer">
+    <div class="mox text-center">
+    <div class="col-12">
+      <i class="icon fa fa-exclamation-circle"></i><h1>Disclaimer</h1>
+      <hr class="rule">
+    </div>
+      <div class="col-12">
+       <p class="">Please note that pastpapers might slightly be different in setting and format to the exams and test that you are preparing for. The lecturers have all the rights to completely change the format and the questions to new ones(<b>Can be encountered but on rare occassions</b>) that have never appeared</p>
+      </div>
+    </div>
+  </div>
+
+  <!--news Letter section--->
+
+    <div class="newsletter">
+      <div class="section-box">
+      </div>
+        <div class="newsletter-row">
+          <div class="newsletter_SubscribeNote">
+            <div class="newsletter_SubscribeNote-title">
+            <h1>Subscribe To Our Newsletter</h1>
+            <p>Subscribe to get Notified whenever a paper is uploaded in your particular course or if there are news trending around your campus</p>
+           <hr class="newsletter_SubscribeNote-title__rule">
+          </div>
+          <form class="newsletter-form mb-4" action="#" method="post">
+            <b><label for="username">Name:</label></b>
+             <input type="newsletter_text" class="form-control" id="username" placeholder="FirstName  LastName" required>
+             <b><label for="usercourse">Course:</label></b>
+             <input type="newsletter_text" class="form-control" id="usercourse" placeholder="What's Your Course?" required>
+               <b><label for="useremail">Email:</label></b>
+               <input type="newsletter_text" class="form-control" id="useremail" placeholder="Username@gmail.com" required>
+               <b><button type="submit" class="btn btn-submit" >Submit</button></b>
+          </form>
+        </div>
+        </div>
+    </div>
+
+<!--connect-->
+  <div class="container-fluid padding" id="footer__connect">
+    <div class="row text-center" id="footer_contactUs">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+        <h4>Contact Us</h4>
+        <hr class="rule">
+        <p>Tel:+256-778451025<br>+256-759130054<br>
+        Find Us:Kampala,Uganda<br>
+        Makerere University<br>
+        Email us: <a href="#">gpaelevator@gmail.com</a><br></p>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+        <h4>Follow Us</h4>
+        <hr class="rule">
+        <i class="fab fa-facebook"></i><a href="#">Gpa Elevator</a><br>
+        <i class="fab fa-twitter"></i><a href="#">@gpaelevator</a><br>
+        <i class="fab fa-google-plus-g"></i><a href="#">Gpa Elevator</a><br>
+        <i class="fab fa-instagram"></i><a href="#">@gpaelevator</a><br>
+        <i class="fab fa-youtube"></i><a href="#">Gpa Elevator</a>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <h4>About Us</h4>
+          <hr class="rule">
+          <a href="#">Our services</a><br>
+          <a href="#">Developers Team</a><br>
+          <a href="#">Partners</a><br>
+          <a href="#">Volunteers</a><br>
+          <a href="#">Future plans</a><br>
+          <a href="#">How to use the Platform</a><br>
+        </div>
+    </div>
+ </div>
+
+ <!--copyright section-->
+ <div  id="footer__connect-copyrightSection" >
+     <hr class="footer__connect-copyrightSection_rule">
+       <h4>All rights reserved gpa elevator copyright &copy; 2019</h4>
+ </div>
+      </div>
+
+
+  </footer>
+</div>
+<button onclick="topFunction()" id="back-to-top" title="Back to top"><i class="back-2-top_icon fas fa-arrow-up"></i></button>
+
+
+
+
+
+
+  <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+  <link rel="stylesheet" id="msnb_notice_style-css" href="../css/msnb_style.css" type="text/css" media="all">
+  <script type="text/javascript" src="../js/popper.min.js"></script>
+  <script type="text/javascript" src="../js/all.js"></script>
+  <link rel="stylesheet" href="../css/academicons.min.css">
+  <link rel="stylesheet" href="../css/media-queries.css">
+  <link rel="stylesheet" href="../css/theme-utils.css">
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="../js/elevator.js"></script>
+
+
+
+
+  </html>

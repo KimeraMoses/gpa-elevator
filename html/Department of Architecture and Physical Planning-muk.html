@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Department of Architecture and Physical Planning-Makerere university | Gpa Elevator</title>
+    <link rel="stylesheet" id="msnb_notice_style-css" href="../css/msnb_style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<script type="text/javascript">   <!--Linking the search button to google-->
+      function searchit() {
+           document.getElementById('gpa_elevator').href=
+           (("https://www.google.com/search?q=")+
+           (document.getElementById("search-box-input").value));
+      }
+</script>
+
+<body>
+  <div class="banner">
+      <div class="search_box">
+          <input type="checkbox" class="search-box_checkbox" id="search-toggle" autocomplete="off">
+          <label for="search-toggle" class="search-button">
+              <i class="search_icon-close fas fa-times"></i>
+            <i class="search_icon fas fa-search"></i></label>
+    
+          <div class="search_box-background">&nbsp;</div>
+           <form action="index.html" class="search_box-form">
+             <input type="text" class="search_box-input" id="search_box-input" placeholder="Type to search..">
+             <button  class="search_box-submit_btn" onkeypress="searchit">
+              <a  href="" id="gpa_elevator" onclick="searchit()" onkeypress="searchit()"><i class="fas fa-search"></i></a>
+              </button>
+           </form>
+        </div>
+
+    <!--USERS SIGNUP-LOGIN SECTION STARTS HERE-->
+  <div class="container-fluid login-signup-section">
+    <div class="container-fluid login-signup-section">
+      <a href="#"  class="btn login-signup-section-btn" data-toggle="modal" data-target="#exampleModalCenter-login" >LOGIN</a>
+      <a href="#" class="btn login-signup-section-btn" data-toggle="modal" data-target="#exampleModalCenter-sign-up" >SIGN UP</a>
+    </div>
+    <!-- Modal-->
+    <div class="modal fade" id="exampleModalCenter-login" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">LOGIN FORM</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="content center">
+              <form class="" action="#" method="post">
+
+                <b><label for="username" class="label">Username or Email:</label></b><br>
+                <div class="input-field">
+                  <i class="form-icon fas fa-user"></i>
+                  <input type="text" id="username" class="form-control-text" placeholder="Username or Email">
+                </div>
+
+                  <b><label for="studentnumber">Student Number:</label></b><br>
+                  <div class="input-field">
+                  <i class="form-icon fas fa-graduation-cap"></i>
+                  <input type="text" id="studentnumber" class="form-control-text" placeholder="Student Number">
+                </div>
+                <b><label for="pass">Password:</label></b><br>
+                <div class="input-field">
+                  <i class="form-icon fas fa-user-lock"></i>
+                  <input type="password" id="pass" class="form-control-text" placeholder="Password">
+                </div><br>
+                <div class="input-field-Remember">
+                  <input type="checkbox" id="check" value="">
+                  <label for="check">Remember me</label>
+                </div>
+                <div class="container-fluid  login-submit-section">
+                  <b><button type="submit" class="btn btn-login_submit btn-lg" >LOGIN</button></b><br>
+                    <a href="#" class="Forgot-password">Forgot Password?</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--sign up section-->
+<div class="modal fade" id="exampleModalCenter-sign-up" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">SIGN UP FORM</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body modal-body-signup">
+        <div class="content center">
+          <form class="mb-4" action="#" method="post">
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-user"></i>
+                <input type="sign-up-text-box" class="form-control-text" id="firstname" placeholder="FirstName" required >
+              </div>
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-user"></i>
+                <input type="sign-up-text-box" class="form-control-text" id="lastname" placeholder="LastName" required >
+              </div>
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-graduation-cap"></i>
+                <input type="sign-up-text-box" class="form-control-text" id="usercourse" placeholder="What's Your Course?" required >
+              </div>
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-clock"></i>
+                <input type="sign-up-text-box" class="form-control-text" id="useryear-of-study" placeholder="Which year?" required >
+              </div>
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-graduation-cap"></i>
+                <input type="sign-up-text-box" class="form-control-text" id="studentnumber" placeholder="Student Number" required >
+              </div>
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-phone-alt"></i>
+                <input type="sign-up-text-box" class="form-control-text" id="usercontact" placeholder="Phone Number" required >
+              </div>
+
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-envelope"></i>
+                <input type="sign-up-text-box" class="form-control-text" id="useremail" placeholder="Username@gmail.com" required >
+              </div>
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-user-lock"></i>
+                <input type="password" class="form-control-text" id="pass" placeholder="Password" required >
+              </div>
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-user-lock"></i>
+                <input type="password" class="form-control-text" id="pass" placeholder="Confirm password" required >
+              </div>
+            <b><button type="submit" class="btn btn-signup_submit btn-lg" >Submit</button></b>
+          </form>
+        </div>
+      </div>
+      <div class="container-fluid modal-footer signup_login_footer">
+        <h5>Already have an account?</h5> <h4><a href="#exampleModalCenter-login" class="login_footer_link" data-toggle="modal" data-target="#exampleModalCenter-login"> Sign in</a></h4>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--USERS SIGNUP-LOGIN SECTION END HERE-->
+
+
+
+    <header>
+
+      <div class="header__gpa-logo"><a href="file:///D:/gpa_elevator/html/index.html"><img id="header__img" src="../img/elevator-logo.png"/></a></div>
+ 
+    </header>
+    <div class="container-fluid" id="universitynamebox">
+        <h3><b>MAKERERE UNIVERSITY</b></h3>
+      </div>
+    <div class="container-fluid">
+    <div class="row text-center">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8" id="faculties">
+          <div class="faculties">
+            <h2><b>SCHOOL OF BUILT ENVIRONMENT</b> </h2>
+          <strong><h3 class="title">Department of Architecture and Physical Planning | CEDAT</h3></strong>
+          <div class="menus">
+                     <ul class="menu">
+                         <li>
+                            <h4 class ="courses"><b>Bachelor of science in Physical Planning</b></h4>
+                                <ul>
+                                  <li class="link"><b><i>YEAR ONE</i></b>
+                                      <ul>
+                                        <li>
+                                            <b class="sem"><i>SEMESTER ONE</i></b>
+                                            <ul>
+                                              <li class="course_units"><b><i><a  href="#">CSC1100-Computer Literacy</a></i></b></li>
+                                              <li class="course_units"><b><i><a  href="#">UNI1001-Communication Skills</a></i></b></li>
+                                              <li class="course_units"><b><i><a  href="#">EMT1108-Engineering Mathematics</a></i></b></li>
+                                              <li class="course_units"><b><i><a  href="#">LAW1120-Basic Law and Governance Structures</a></i></b></li>
+                                              <li class="course_units"><b><i><a  href="#">QUS1101-Introduction to Quantity Surveying</a></i></b></li>
+                                              </ul>
+                                          </li>
+                                      <li>
+                                          <b class="sem"><i>SEMESTER TWO</i></b>
+                                          <ul>
+                                             <li class="course_units"><b><i><a  href="#">ARC1206-Elements of Architectural Design Fundamentals</a></i></b></li>
+                                             <li class="course_units"><b><i><a  href = "#">CIV1205-Elements of Structural Analysis</a></i></b></li>
+                                             <li class="course_units"><b><i><a  href = "#">LAW1220-Law of Contract for Surveyors</a></i></b></li>
+                                             <li class="course_units"><b><i><a  href="#">	QUS1205-Construction Technology I</a></i></b></li>
+                                             <li class="course_units"><b><i><a  href = "#">QUS1206-Construction Drawing</a></i></b></li>
+                                             <li class="course_units"><b><i><a  href = "#">QUS1207-Quantity Surveying I</a></i></b></li>
+                                          </ul>
+                                        </li>
+                                        </ul>
+                                      </li>
+
+                                      <li class="link"><b><i>YEAR TWO</i></b>
+                                                <ul>
+                                                    <li>
+                                                        <b class="sem"><i>SEMESTER ONE</i></b>
+                                                          <ul>
+                                                            <li class="course_units"><b><i><a href="#">CMG2102-Construction Materials</a></i></b></li>
+                                                            <li class="course_units"><b><i><a href="#">ECO2104-Principles of Management</a></i></b></li>
+                                                            <li class="course_units"><b><i><a href="#">LAW2106-Law of Torts for Construction	</a></i></b></li>
+                                                            <li class="course_units"><b><i><a href="#">QUS2102-Building Finishes & Fixtures</a></i></b></li>
+                                                            <li class="course_units"><b><i><a href="#">QUS2104-Construction Technology II	</a></i></b></li>
+                                                            <li class="course_units"><b><i><a href="#">SOC2103-Sociology for Technology</a></i></b></li>
+                                                          </ul>
+                                                    </li>
+                                                      <li>
+                                                        <b class="sem"><i>SEMESTER TWO</i></b>
+                                                          <ul>
+                                                           <li class="course_units"><b><i><a  href="#">LAW2202-Commercial Law for Construction</a></i></b></li>
+                                                           <li class="course_units"><b><i><a  href ="#">QUS2201-Quantity Surveying II</a></i></b></li>
+                                                           <li class="course_units"><b><i><a  href ="#">QUS2202-Building Services</a></i></b></li>
+                                                           <li class="course_units"><b><i><a  href="#">QUS2203-Economics of Property and Construction</a></i></b></li>
+                                                           <li class="course_units"><b><i><a  href ="#">QUS2205-Cost and Value Engineering</a></i></b></li>
+                                                           <li class="course_units"><b><i><a  href ="#">SUV2206-Land Surveying for Construction	</a></i></b></li>
+                                                          </ul>
+                                                      </li>
+                                                </ul>
+                                      </li>
+
+
+
+                                        <li class="link"><b><i>YEAR THREE</i></b>
+                                                  <ul>
+                                                    <li>
+                                                    <b class="sem"><i>SEMESTER ONE</i></b>
+                                                          <ul>
+                                                            <li class="course_units"><b><i><a  href="#">CMG3103-Maintenance Management</a></i></b></li>
+                                                            <li class="course_units"><b><i><a  href="#">COE3103-Principles of Accounting for Surveyors</a></i></b></li>
+                                                            <li class="course_units"><b><i><a  href="#">LAW3109-Elements of Property Law	</a></i></b></li>
+                                                            <li class="course_units"><b><i><a  href="#">LAW3110-Elements of Planning Law</a></i></b></li>
+                                                            <li class="course_units"><b><i><a  href="#">QUS3101-Construction Technology III	</a></i></b></li>
+                                                            <li class="course_units"><b><i><a  href="#">QUS3102-Housing Development and Management	</a></i></b></li>
+                                                          </ul>
+                                                    </li>
+                                                    <li>
+                                                      <b class="sem"><i>SEMESTER TWO</i></b>
+                                                          <ul>
+                                                            <li class="course_units"><b><i><a  href="#">COE3202-Entrepreneurship	</a></i></b></li>
+                                                            <li class="course_units"><b><i><a  href="#">LEC3204-Research Methods and Statistics		</a></i></b></li>
+                                                            <li class="course_units"><b><i><a  href="#">QUS3201-Quantity Surveying III	</a></i></b></li>
+                                                            <li class="course_units"><b><i><a  href="#">QUS3202-Construction Production Management		</a></i></b></li>
+                                                            <li class="course_units"><b><i><a  href="#">QUS3203-Construction Contract Administration	</a></i></b></li>
+                                                            <li class="course_units"><b><i><a  href="#">QUS3301-Industrial Training	</a></i></b></li>
+                                                          </ul>
+                                                   </li>
+                                                </ul>
+                                        </li>
+
+                </ul>
+                </li>
+
+
+                <!------------------------------------------>
+
+                <li>
+                      <h4 class ="courses"><b>Bachelor of science in Architecture</b></h4>
+                      <ul>      <li class="link"><b><i>YEAR ONE</i></b>
+                                <ul>
+                                  <li>
+                                    <b class="sem"><i>SEMESTER ONE</i></b>
+                                      <ul>
+                                        <li class="course_units"><b><i><a  href="#">CSC1100-Computer Literary	</a></i></b></li>
+                                        <li class="course_units"><b><i><a  href="#">CSK1101-Communication Skills	</a></i></b></li>
+                                        <li class="course_units"><b><i><a  href="#">ECO1107-Microeconomics for Surveyors	</a></i></b></li>
+                                        <li class="course_units"><b><i><a  href="#">EMT1105-Engineering Mathematics		</a></i></b></li>
+                                        <li class="course_units"><b><i><a  href="#">LAW1106-Basic Law and Governance Structures	 </a></i></b></li>
+                                        <li class="course_units"><b><i><a  href="#">SUV 1105-Land Plan Drawing		</a></i></b></li>
+                                        </ul>
+                                    </li>
+                                <li>
+                                    <b class="sem"><i>SEMESTER TWO</i></b>
+                                    <ul>
+                                       <li class="course_units"><b><i><a  href="#">ECO1207-Macroeconomics for Surveyors	</a></i></b></li>
+                                       <li class="course_units"><b><i><a  href="#">LAW1206-Law of Contract for Surveyors	</a></i></b></li>
+                                       <li class="course_units"><b><i><a  href="#">LEC1201-Land Economics I	</a></i></b></li>
+                                       <li class="course_units"><b><i><a  href="#">LEC1207-Real Estate Valuation I	</a></i></b></li>
+                                       <li class="course_units"><b><i><a  href="#">LEC1301-Measured Drawing	</a></i></b></li>
+                                       <li class="course_units"><b><i><a  href="#">QUS1201-Construction Technology I	</a></i></b></li>
+                                       <li class="course_units"><b><i><a  href="#">QUS1202-Construction Drawing	</a></i></b></li>
+
+                                    </ul>
+                                  </li>
+                                  </ul>
+                                </li>
+
+
+                  <li class="link"><b><i>YEAR TWO</i></b>
+                          <ul>
+                              <li>
+                                  <b class="sem"><i>SEMESTER ONE</i></b>
+                                    <ul>
+                                      <li class="course_units"><b><i><a  href="#">CMG2102-Construction Materials	</a></i></b></li>
+                                      <li class="course_units"><b><i><a  href="#">LAW2106-Law of Torts for Technology	</a></i></b></li>
+                                      <li class="course_units"><b><i><a  href="#">LEC 2101-Real Estate Valuation II		</a></i></b></li>
+                                      <li class="course_units"><b><i><a  href="#">QUS2101-Construction Technology II	</a></i></b></li>
+                                      <li class="course_units"><b><i><a  href="#">QUS2102-Building Finishes and Fixtures	</a></i></b></li>
+                                      <li class="course_units"><b><i><a  href="#">SOC2103-Sociology for Technology	</a></i></b></li>
+                                    </ul>
+                              </li>
+                                <li>
+                                  <b class="sem"><i>SEMESTER TWO</i></b>
+                                    <ul>
+                                     <li class="course_units"><b><i><a  href="#">COE2203-Principles of Accounting	</a></i></b></li>
+                                     <li class="course_units"><b><i><a  href="#">LAW2206-Commercial Law for Construction	</a></i></b></li>
+                                     <li class="course_units"><b><i><a  href="#">LEC2201-Land Economics II		</a></i></b></li>
+                                     <li class="course_units"><b><i><a  href="#">QUS2204-Building Services		</a></i></b></li>
+                                     <li class="course_units"><b><i><a  href="#">SUV2207-Land Measurement Sciences	</a></i></b></li>
+                                     <li class="course_units"><b><i><a  href="#">SUV2208-Land Registration		</a></i></b></li>
+                                    </ul>
+                                </li>
+                          </ul>
+                  </li>
+
+
+                  <li class="link"><b><i>YEAR THREE</i></b>
+                          <ul>
+                            <li>
+                              <b class="sem"><i>SEMESTER ONE</i></b>
+                                  <ul>
+                                    <li class="course_units"><b><i><a  href="#">CMG3103-Maintenance Management	</a></i></b></li>
+                                    <li class="course_units"><b><i><a  href="#">CMG3103-Real Estate Development		</a></i></b></li>
+                                    <li class="course_units"><b><i><a  href="#">LAW3108-Administrative and Local Government Law	</a></i></b></li>
+                                    <li class="course_units"><b><i><a  href="#">LAW3109-Real Property Law I	</a></i></b></li>
+                                    <li class="course_units"><b><i><a  href="#">LEC3101-Real Estate Valuation III	</a></i></b></li>
+                                    <li class="course_units"><b><i><a  href="#">LEC3102-Investment Appraisal I	</a></i></b></li>
+                                  </ul>
+                            </li>
+                            <li>
+                                <b class="sem"><i>SEMESTER TWO</i></b>
+                                  <ul>
+                                    <li class="course_units"><b><i><a  href="#">COE3202-Entrepreneurship	</a></i></b></li>
+                                    <li class="course_units"><b><i><a  href ="#">DEC3202-Development Economics for Construction	</a></i></b></li>
+                                    <li class="course_units"><b><i><a  href="#">LEC3201-Urban & Regional Planning		</a></i></b></li>
+                                    <li class="course_units"><b><i><a  href="#">LEC3202-Investment Appraisal II	</a></i></b></li>
+                                    <li class="course_units"><b><i><a  href="#">LEC3203-Property Economics	</a></i></b></li>
+                                    <li class="course_units"><b><i><a  href="#">LEC3204-Research Methods & Statistics	</a></i></b></li>
+                                  </ul>
+                           </li>
+                        </ul>
+                  </li>
+                  <li class="link"><b><i>YEAR FOUR</i></b>
+                          <ul>
+                            <li>
+                            <b class="sem"><i>SEMESTER ONE</i></b>
+                                  <ul>
+                                    <li class="course_units"><b><i><a  href="#">LEC4101-Real Estate Valuation IV	</a></i></b></li>
+                                    <li class="course_units"><b><i><a  href="#">LEC4102-Property Management	</a></i></b></li>
+                                    <li class="course_units"><b><i><a  href="#">LEC4103-Professional Practice, Procedure& Ethics	</a></i></b></li>
+                                    <li class="course_units"><b><i><a  href="#">LEC4103-Land Policy Studies	</a></i></b></li>
+                                    <li class="course_units"><b><i><a  href="#">LEC4105-Real Estate Finance & Taxation	</a></i></b></li>
+                                    <li class="course_units"><b><i><a  href="#">QUS4103-Building Surveying	</a></i></b></li>
+                                  </ul>
+                            </li>
+                            <li>
+                                <b class="sem"><i>SEMESTER TWO</i></b>
+                                  <ul>
+                                  <li class="course_units"><b><i><a  href="#">ECO4207-Elements of Econometrics	</a></i></b></li>
+                                  <li class="course_units"><b><i><a  href="#">LAW4216-Real Property Law II	</a></i></b></li>
+                                  <li class="course_units"><b><i><a  href="#">LEC4201-Final Year Project I&II	</a></i></b></li>
+                                  <li class="course_units"><b><i><a  href="#">LEC4202-Property Investment Analysis	</a></i></b></li>
+                                  <li class="course_units"><b><i><a  href="#">LEC4203-Property Marketing	</a></i></b></li>
+                                  <li class="course_units"><b><i><a  href="#">SUV4206-Geographical Information Systems	</a></i></b></li>
+                                  </ul>
+                  </li>
+                  </ul>
+                        </li>
+                        <li class="link"><b><i>YEAR FIVE</i></b>
+                                <ul>
+                                  <li>
+                                  <b class="sem"><i>SEMESTER ONE</i></b>
+                                        <ul>
+                                          <li class="course_units"><b><i><a  href="#">LEC4101-Real Estate Valuation IV	</a></i></b></li>
+                                          <li class="course_units"><b><i><a  href="#">LEC4102-Property Management	</a></i></b></li>
+                                          <li class="course_units"><b><i><a  href="#">LEC4103-Professional Practice, Procedure& Ethics	</a></i></b></li>
+                                          <li class="course_units"><b><i><a  href="#">LEC4103-Land Policy Studies	</a></i></b></li>
+                                          <li class="course_units"><b><i><a  href="#">LEC4105-Real Estate Finance & Taxation	</a></i></b></li>
+                                          <li class="course_units"><b><i><a  href="#">QUS4103-Building Surveying	</a></i></b></li>
+                                        </ul>
+                                  </li>
+                                  <li>
+                                      <b class="sem"><i>SEMESTER TWO</i></b>
+                                        <ul>
+                                        <li class="course_units"><b><i><a  href="#">ECO4207-Elements of Econometrics	</a></i></b></li>
+                                        <li class="course_units"><b><i><a  href="#">LAW4216-Real Property Law II	</a></i></b></li>
+                                        <li class="course_units"><b><i><a  href="#">LEC4201-Final Year Project I&II	</a></i></b></li>
+                                        <li class="course_units"><b><i><a  href="#">LEC4202-Property Investment Analysis	</a></i></b></li>
+                                        <li class="course_units"><b><i><a  href="#">LEC4203-Property Marketing	</a></i></b></li>
+                                        <li class="course_units"><b><i><a  href="#">SUV4206-Geographical Information Systems	</a></i></b></li>
+                                        </ul>
+                        </li>
+                        </ul>
+                              </li>
+                    </ul>
+                    </li>
+
+
+
+                      <!------------------------------------------>
+
+              </ul>
+    </div>
+ </div>
+ </div>
+
+ <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4" id="university_links" >
+   <div class="University-links">
+     <strong><h4 class="title2">Quick Guidelines | Gpa Elevator</h4></strong>
+   <div id="guidelines">
+           <p>Just go to your course, then select the year which you want to visit and then select that particular course unit to get access to all papers and lecture notes<br/>
+                   OR<br/>
+             Search for that Particular course units using course-unit name or course code to get you their directly
+             <a href="#gpa_elevator" id="btn" type="button" class="btn btn-primary">Search</a>
+             </p>
+   </div>
+    </div>
+    <div class="University-links">
+        <img id="img1" src="../img/muk-logo.png" alt="sorry"><span><strong><h3 class="title2">Quick Links</h3></strong></span>
+    <div class="links">
+               <ul class="link">
+            <li class="link-item" id="link-item-first-child"><a href="index.html">Gpa Elevator Home Page</a></li>
+            <li class="link-item"><a href="https://mak.ac.ug/">University Website</a></li>
+            <li class="link-item"><a href="https://student.kyu.ac.ug/portal-1.6/?cache">Students Portal</a></li>
+            <li class="link-item"><a href="https://kyu.ac.ug/kyambogo-university-map/">University Location</a></li>
+            <li class="link-item"><a href="https://kelms.kyu.ac.ug/">e-Learning</a></li>
+            <li class="link-item"><a href="https://admissions.kyu.ac.ug/">Admissions Portal</a></li>
+            <li class="link-item"><a href="https://kyu.ac.ug/scholarship/">Scholarship</a></li>
+              </ul>
+    </div>
+     </div>
+ </div>
+ </div>
+</div>
+
+<!--news trending-->
+<div class="container-fluid" id="news">
+  <h1><i>News Trending</i></h1>
+</div>
+<div class="container-fluid" id="social-feeds">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="widget widget_text widget-none" id="text-3"><h3 class="title">News on Twitter</h3>
+        <div class="textwidget">
+          <p><iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-timeline twitter-timeline-rendered"
+             style="position: static; visibility: visible; display: inline-block; width: 300px; height: 405px; padding: 0px; border: none; max-width: 100%; min-width: 180px; margin-top: 0px; margin-bottom: 0px; min-height: 200px;"
+             data-widget-id="profile:gpaelevator" title="Twitter Timeline" src="gpatweeter-handle.html">
+          </iframe>
+          <script async="" src="./kyu_files/widgets.js.download" ></script>
+        </p>
+      </div>
+         <div class="cleaner">&nbsp;</div></div>
+       </div>
+<div class="col-md-8">
+ <div class="row">
+ <div class="container-fluid" id="news_trending_title_campus"><h3 class="title">News Around Your Campus </h3></div>
+       <div class="col-6" id="news_trending_col_1">
+             <div class="widget widget_notice_board_widget widget-none" id="notice_board_widget-4">
+               <div class="msnb_notice scroll-up">
+                   <ul class="notice-list"> <strong>Kyambogo University</strong>
+                     <li> Semester One 2019/2020 Academic Year commences on August 03, 2019 and will end on December 08, 2019.</li>
+                     <li>Semester One 2019/2020 Academic Year, examinations are scheduled to begin on November 18<sup>th</sup> 2019 and end on December 08th 2019.</li>
+                     <li> Semester Two 2019/2020 Academic Year commences on January 11, 2020, and will end on May 10, 2020.</li>
+                     <li> Semester Two 2019/2020 Academic Year, examinations are scheduled to begin on April 13<sup>th</sup> 2020 and end on May 03<sup>rd</sup> 2020.</li>
+                     <!--<li> <a href="#" target="_blank">Dates for the Commencement of Semester One 2019/2020 Academic Year</a></li>-->
+
+                    <strong>Makerere University</strong>
+                     <li> Semester One 2019/2020 Academic Year commences on August 03, 2019 and will end on December 08, 2019.</li>
+                     <li>Semester One 2019/2020 Academic Year, examinations are scheduled to begin on November 18<sup>th</sup> 2019 and end on December 08th 2019.</li>
+                     <li> Semester Two 2019/2020 Academic Year commences on January 11, 2020, and will end on May 10, 2020.</li>
+                     <li> Semester Two 2019/2020 Academic Year, examinations are scheduled to begin on April 13<sup>th</sup> 2020 and end on May 03<sup>rd</sup> 2020.</li>
+                   </ul>
+             </div>
+          </div>
+       </div>
+       <div class="col-6">
+         <div class="widget widget_notice_board_widget widget-none" id="notice_board_widget-4">
+           <div class="msnb_notice scroll-up">
+               <ul class="notice-list"> <strong>Makerere University Business School</strong>
+                 <li> 	Monday, August 05th to Sunday, August 11, 2019	Orientation Week for ALL Fresher Students</li>
+                 <li> <a href="#" target="_blank">TO: All Applicants for Private Entry Academic Year 2019/2020</a></li>
+                 <li> <a href="#" target="_blank">Kyambogo University 2019/2020 New Admission List</a></li>
+                 <li> <a href="#" target="_blank">The Directorate of Human Resources invites applications for the following jobs;</a></li>
+                 <li> <a href="#" target="_blank">Dates for the Commencement of Semester One 2019/2020 Academic Year</a></li>
+               <li> <a href="#" target="_blank">Guidelines for issuing out Admission Letters for Academic Year 2019/202</a></li>
+               <li> <a href="#" target="_blank">TO: All Applicants for Private Entry Academic Year 2019/2020</a></li>
+               <li> <a href="#" target="_blank">Kyambogo University 2019/2020 New Admission List</a></li>
+               <li> <a href="#" target="_blank">The Directorate of Human Resources invites applications for the following jobs;</a></li>
+               <li> <a href="#" target="_blank">Dates for the Commencement of Semester One 2019/2020 Academic Year</a></li>
+               </ul>
+         </div>
+      </div>
+   </div>
+   <div class="container-fluid padding" id="trend">
+   <div class="row text-center padding" >
+   <div class="col-6" >
+     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+         <div class="carousel-item active" id="muk">
+           <img id="img1" src="../img/muk-logo.png" alt="sorry">
+           <h3><strong>Makerere University</strong></h3>
+           <hr class="rule">
+           <p>3rd August 2019 is the begining of the fresher's orientation week and for the entire university the semester begins on 10th August 2019-by Guild press
+           <br>3rd Sida-Bright International Summer School Closes at CoCIS-30/07/2019</p>
+         </div>
+         <div class="carousel-item" id="busitema">
+           <img id="img1" src="../img/busitema-logo.png" alt="sorry">
+           <h3>Busitema University</h3>
+           <hr class="rule">
+           <p>One of the former contestant for Guild presidency Mukisa goes missing. The latest news that we have gotten today the 2nd/06/2019 shows that,Mukisa Joshua W was discovered but not in a good condition.We shall keep you updated</p>
+         </div>
+         <div class="carousel-item" id="KIU">
+           <img id="img1" src="../img/logo-KIU.jpg" alt="sorry">
+           <h3>Kampala International university</h3>
+           <hr class="rule">
+           <p>One of the former contestant for Guild presidency Mukisa goes missing. The latest news that we have gotten today the 2nd/06/2019 shows that,Mukisa Joshua W was discovered but not in a good condition.We shall keep you updated</p>
+         </div>
+         <div class="carousel-item" id="mubs">
+           <img id="img1" src="../img/mubs-logo.png" alt="sorry">
+           <h3>MUBS</h3>
+           <hr class="rule">
+           <p>One of the former contestant for Guild presidency Mukisa goes missing. The latest news that we have gotten today the 2nd/06/2019 shows that,Mukisa Joshua W was discovered but not in a good condition.We shall keep you updated</p>
+         </div>
+         <div class="carousel-item" id="ndejje">
+           <img id="img1" src="../img/NDU.png" alt="sorry">
+           <h3>Ndejje University</h3>
+           <hr class="rule">
+           <p>One of the former contestant for Guild presidency Mukisa goes missing. The latest news that we have gotten today the 2nd/06/2019 shows that,Mukisa Joshua W was discovered but not in a good condition.We shall keep you updated</p>
+         </div>
+       </div>
+     </div>
+   </div>
+
+   <div class="col-6">
+     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+         <div class="carousel-item active" id="nkumba">
+           <img id="img1" src="../img/nkumba-logo.png" alt="Nkumba University">
+           <h3>Nkumba University</h3>
+           <hr class="rule">
+           <p>One of the former contestant for Guild presidency Mukisa goes missing. The latest news that we have gotten today the 2nd/06/2019 shows that,Mukisa Joshua W was discovered but not in a good condition.We shall keep you updated</p>
+         </div>
+         <div class="carousel-item" id="KU">
+           <img id="img1" src="../img/ku-logo.png" alt="Kampala University">
+           <h3>Kampala University</h3>
+           <hr class="rule">
+           <p>One of the former contestant for Guild presidency Mukisa goes missing. The latest news that we have gotten today the 2nd/06/2019 shows that,Mukisa Joshua W was discovered but not in a good condition.We shall keep you updated</p>
+
+         </div>
+         <div class="carousel-item" id="bugema">
+           <img id="img1" src="../img/bgma-logo.jpg" alt="Bugema University">
+           <h3>Bugema University</h3>
+           <hr class="rule">
+           <p>One of the former contestant for Guild presidency Mukisa goes missing. The latest news that we have gotten today the 2nd/06/2019 shows that,Mukisa Joshua W was discovered but not in a good condition.We shall keep you updated</p>
+         </div>
+         <div class="carousel-item " id="kyu">
+           <a href="kyambogo university.html"><img id="img1" src="../img/kyu-logo.jpg" alt="Kyambogo University"></a>
+           <h3>Kyambogo University</h3>
+           <hr class="rule">
+           <p>Semester One 2019/2020 Academic Year commences on August 03, 2019 and will end on December 08, 2019<br/>source-<a href="https://kyu.ac.ug/notice/dates-for-the-commencement-of-semester-one-2019-2020-academic-year/">https://kyu.ac.ug/notice/dates-for-the-commencement-of-semester-one-2019-2020-academic-year/</a></p>
+
+         </div>
+         <div class="carousel-item " id="gulu">
+           <img id="img1" src="../img/gulu-logo.png" alt="Gulu University">
+           <h3>Gulu University</h3>
+           <hr class="rule">
+           <p>Semester One 2019/2020 Academic Year commences on August 03, 2019 and will end on December 08, 2019<br/>source-https://kyu.ac.ug/notice/dates-for-the-commencement-of-semester-one-2019-2020-academic-year/</p>
+         </div>
+       </div>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+ </div>
+</div>
+</div>
+</body>
+
+     <footer>
+    <!--DISCLAIMER-->
+    <div class="container-fluid padding" id="disclaimer">
+      <div class="mox text-center">
+      <div class="col-12">
+        <i class="icon fa fa-exclamation-circle"></i><h1 >Disclaimer</h1>
+        <hr class="rule">
+      </div>
+        <div class="col-12">
+         <p class="">Please note that pastpapers might slightly be different in setting and format to the exams and test that you are preparing for. The lecturers have all the rights to completely change the format and the questions to new ones(<b>Can be encountered but on rare occassions</b>) that have never appeared</p>
+        </div>
+      </div>
+    </div>
+    <!--news Letter section--->
+
+      <div class="newsletter">
+        <div class="section-box">
+        </div>
+          <div class="newsletter-row">
+            <div class="newsletter_SubscribeNote">
+              <div class="newsletter_SubscribeNote-title">
+              <h1>Subscribe To Our Newsletter</h1>
+              <p>Subscribe to get Notified whenever a paper is uploaded in your particular course or if there are news trending around your campus</p>
+             <hr class="newsletter_SubscribeNote-title__rule">
+            </div>
+
+            <form class="mb-4" action="#" method="post">
+              <b><label for="username">Name:</label></b>
+               <input type="newsletter_text" class="form-control" id="username" placeholder="FirstName  LastName" required>
+               <b><label for="usercourse">Course:</label></b>
+               <input type="newsletter_text" class="form-control" id="usercourse" placeholder="What's Your Course?" required>
+                 <b><label for="useremail">Email:</label></b>
+                 <input type="newsletter_text" class="form-control" id="useremail" placeholder="Username@gmail.com" required>
+                 <b><button type="submit" class="btn btn-submit" onkeypress="#">Submit</button></b>
+            </form>
+          </div>
+          </div>
+      </div>
+
+      <!--connect-->
+        <div class="container-fluid padding" id="footer__connect">
+          <div class="row text-center" id="footer_contactUs">
+            <div class="col-md-6">
+              <h4>Contact Us</h4>
+              <hr class="rule">
+              <p>Tel:+256-778451025<br>+256-759130054<br>
+              Find Us:Kampala,Uganda<br>
+              Makerere University<br>
+              Email us: <a href="#">gpaelevator@gmail.com</a><br></p>
+            </div>
+            <div class="col-md-6">
+              <h4>Follow Us</h4>
+              <hr class="rule">
+              <i class="fab fa-facebook"></i><a href="#">Gpa Elevator</a><br>
+              <i class="fab fa-twitter"></i><a href="#">@gpaelevator</a><br>
+              <i class="fab fa-google-plus-g"></i><a href="#">Gpa Elevator</a><br>
+              <i class="fab fa-instagram"></i><a href="#">@gpaelevator</a><br>
+              <i class="fab fa-youtube"></i><a href="#">Gpa Elevator</a>
+            </div>
+          </div>
+       </div>
+                  <div  id="footer__connect-copyrightSection" >
+                      <hr class="footer__connect-copyrightSection_rule">
+                        <h4>All rights reserved gpa elevator copyright &copy; 2019</h4>
+                  </div>
+                </footer>
+
+</div>
+<button onclick="topFunction()" id="back-to-top" title="Back to top"><i class="back-2-top_icon fas fa-arrow-up"></i></button>
+
+
+
+  <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/popper.min.js"></script>
+  <script type="text/javascript" src="../js/all.js"></script>
+  <script type="text/javascript" src="../js/elevator.js"></script>
+  <link rel="stylesheet" href="../css/media-queries.css">
+  </html>

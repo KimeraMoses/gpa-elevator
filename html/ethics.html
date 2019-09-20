@@ -1,0 +1,540 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CMP1102:Computer Engineering Ethics-Makerere university | Gpa Elevator</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<script type="text/javascript">   <!--Linking the search button to google-->
+      function searchit() {
+           document.getElementById('gpa_elevator').href=
+           (("https://www.google.com/search?q=")+
+           (document.getElementById("search-box-input").value));
+      }
+</script>
+
+<body>
+  <div class="banner">
+      <div class="search_box">
+          <input type="checkbox" class="search-box_checkbox" id="search-toggle" autocomplete="off">
+          <label for="search-toggle" class="search-button">
+              <i class="search_icon-close fas fa-times"></i>
+            <i class="search_icon fas fa-search"></i></label>
+    
+          <div class="search_box-background">&nbsp;</div>
+           <form action="index.html" class="search_box-form">
+             <input type="text" class="search_box-input" id="search_box-input" placeholder="Type to search..">
+             <button  class="search_box-submit_btn" onkeypress="searchit">
+              <a  href="" id="gpa_elevator" onclick="searchit()" onkeypress="searchit()"><i class="fas fa-search"></i></a>
+              </button>
+           </form>
+        </div>
+
+
+    <!--USERS SIGNUP-LOGIN SECTION STARTS HERE-->
+  <div class="container-fluid login-signup-section">
+    <div class="container-fluid login-signup-section">
+      <a href="#"  class="btn login-signup-section-btn" data-toggle="modal" data-target="#exampleModalCenter-login" >LOGIN</a>
+      <a href="#" class="btn login-signup-section-btn" data-toggle="modal" data-target="#exampleModalCenter-sign-up" >SIGN UP</a>
+    </div>
+    <!-- Modal-->
+    <div class="modal fade" id="exampleModalCenter-login" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">LOGIN FORM</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="content center">
+              <form class="" action="#" method="post">
+
+                <b><label for="username" class="label">Username or Email:</label></b><br>
+                <div class="input-field">
+                  <i class="form-icon fas fa-user"></i>
+                  <input type="text" id="username" class="form-control-text" placeholder="Username or Email">
+                </div>
+
+                  <b><label for="studentnumber">Student Number:</label></b><br>
+                  <div class="input-field">
+                  <i class="form-icon fas fa-graduation-cap"></i>
+                  <input type="text" id="studentnumber" class="form-control-text" placeholder="Student Number">
+                </div>
+                <b><label for="pass">Password:</label></b><br>
+                <div class="input-field">
+                  <i class="form-icon fas fa-user-lock"></i>
+                  <input type="password" id="pass" class="form-control-text" placeholder="Password">
+                </div><br>
+                <div class="input-field-Remember">
+                  <input type="checkbox" id="check" value="">
+                  <label for="check">Remember me</label>
+                </div>
+                <div class="container-fluid  login-submit-section">
+                  <b><button type="submit" class="btn btn-login_submit btn-lg" >LOGIN</button></b><br>
+                    <a href="#" class="Forgot-password">Forgot Password?</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--sign up section-->
+<div class="modal fade" id="exampleModalCenter-sign-up" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">SIGN UP FORM</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body modal-body-signup">
+        <div class="content center">
+          <form class="mb-4" action="#" method="post">
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-user"></i>
+                <input type="sign-up-text-box" class="form-control-text" id="firstname" placeholder="FirstName" required >
+              </div>
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-user"></i>
+                <input type="sign-up-text-box" class="form-control-text" id="lastname" placeholder="LastName" required >
+              </div>
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-graduation-cap"></i>
+                <input type="sign-up-text-box" class="form-control-text" id="usercourse" placeholder="What's Your Course?" required >
+              </div>
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-clock"></i>
+                <input type="sign-up-text-box" class="form-control-text" id="useryear-of-study" placeholder="Which year?" required >
+              </div>
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-graduation-cap"></i>
+                <input type="sign-up-text-box" class="form-control-text" id="studentnumber" placeholder="Student Number" required >
+              </div>
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-phone-alt"></i>
+                <input type="sign-up-text-box" class="form-control-text" id="usercontact" placeholder="Phone Number" required >
+              </div>
+
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-envelope"></i>
+                <input type="sign-up-text-box" class="form-control-text" id="useremail" placeholder="Username@gmail.com" required >
+              </div>
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-user-lock"></i>
+                <input type="password" class="form-control-text" id="pass" placeholder="Password" required >
+              </div>
+              <div class="form-control signup_login_textbox">
+                <i class="form-icon fas fa-user-lock"></i>
+                <input type="password" class="form-control-text" id="pass" placeholder="Confirm password" required >
+              </div>
+            <b><button type="submit" class="btn btn-signup_submit btn-lg" >Submit</button></b>
+          </form>
+        </div>
+      </div>
+      <div class="container-fluid modal-footer signup_login_footer">
+        <h5>Already have an account?</h5> <h4><a href="#exampleModalCenter-login" class="login_footer_link" data-toggle="modal" data-target="#exampleModalCenter-login"> Sign in</a></h4>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--USERS SIGNUP-LOGIN SECTION END HERE-->
+
+
+
+    <header>
+
+      <div class="header__gpa-logo"><a href="file:///D:/gpa_elevator/html/index.html"><img id="header__img" src="../img/elevator-logo.png"/></a></div>
+
+
+    </header>
+<div class="container-fluid" id="universitynamebox">
+    <h3><b>MAKERERE UNIVERSITY</b></h3>
+  </div>
+
+  <!--Lecture Notes section-->
+  <div class="container" id="body-content">
+  <div class="row text-center">
+    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3" id="lecture_notes">
+       <div class="lecture-notes-section">
+           <span><strong><h3 class="title2">LECTURE NOTES</h3></strong></span>
+       <div class="lecture-notes-box">
+                  <ul>
+                    <li class="lecture-notes"><b><i><a href="../pdf/computer eng/year1/sem1/CMP1102-Cmp Ethics/Lec01.pdf ">Lecture 1 </a></i></b></li>
+                    <li class="lecture-notes"><b><i><a href="../pdf/computer eng/year1/sem1/CMP1102-Cmp Ethics/Lec02-CMP1102.pdf">lecture 2 </a></i></b></li>
+                    <li class="lecture-notes"><b><i><a href="../pdf/computer eng/year1/sem1/CMP1102-Cmp Ethics/Lec03-CMP1102.pdf">lecture 3 </a></i></b></li>
+                    <li class="lecture-notes"><b><i><a href="../pdf/computer eng/year1/sem1/CMP1102-Cmp Ethics/Lec04-CMP1102.pdf">lecture 4</a></i></b></li>
+                    <li class="lecture-notes"><b><i><a href="../pdf/computer eng/year1/sem1/CMP1102-Cmp Ethics/Lec05-CMP1102.pdf">lecture 5 </a></i></b></li>
+                 </ul>
+       </div>
+        </div>
+        <a href="CMP1201-electronics2.html" id="comparisonSection__buttons" class="btn btn-sm btn--pink">Mutesa I Royal university</a>
+        <a href="EMT1201.html" class="btn btn--lightgreen" id="comparisonSection__buttons">Kampala University</a><br>
+        <a href="EMT1201.html" class="btn btn--tertiary" id="comparisonSection__buttons">Bugema University</a>
+    </div>
+    <!--lecture notes ends here-->
+
+    <!--Paper section-->
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" id="schools">
+        <div class="schools">
+          <strong><h1 class="title">CEDAT</h1></strong>
+          <h4><b>Bachelor of Science In Computer Engineering</b> </h4>
+        <strong><h3 class="title">CMP1102:COMPUTER ENGINEERING ETHICS</h3></strong>
+        <hr class="horizontal-rule_1">
+        <div class="link">
+          <ul >
+            <li>
+                  <h4 class ="school"><b>YEAR 2019/2020</b></h4>
+                         <ul>
+                           <li class="department"><b><i><a href="erormassage.html">CMP1102-Continous Assessment Test I</a></i></b></li>
+                           <li class="department"><b><i><a href="erormassage.html">CMP1102-Continous Assessment Test II</a></i></b></li>
+                           <li class="department"><b><i><a href="cmp1102-doc.html">CMP1102-Final Semester Exam</a></i></b></li>
+                        </ul>
+               </li>
+               <li>
+               <h4 class ="school"><b>YEAR 2018/2019</b></h4>
+                       <ul>
+                         <li class="department"><b><i><a href="cmp1102-doc.html">CMP1102-Continous Assessment Test I</a></i></b></li>
+                         <li class="department"><b><i><a href="../pdf/computer eng/year1/sem1/CMP1102-Cmp Ethics/CMP1102-Computer Engineering Ethics-CAT11.pdf">CMP1102-Continous Assessment Test II</a></i></b></li>
+                         <li class="department"><b><i><a href="../pdf/computer eng/year1/sem1/CMP1102-Cmp Ethics/CMP1102-Computer Engineering Ethics-CAT1.pdf">CMP1102-Final Semester Exam</a></i></b></li>
+                       </ul>
+            </li>
+                <li>
+            <h4 class ="school"><b>YEAR 2017/2018</b></h4>
+                         <ul>
+                           <li class="department"><b><i><a href="erormassage.html">CMP1102-Continous Assessment Test I</a></i></b></li>
+                           <li class="department"><b><i><a href="erormassage.html">CMP1102-Continous Assessment Test II</a></i></b></li>
+                           <li class="department"><b><i><a href="erormassage.html">CMP1102-Final Semester Exam</a></i></b></li>
+                         </ul>
+                 </li>
+            </ul>
+          </div>
+          <div class="load-more-section">
+            <a href="#">Load More...</a>
+          </div>
+          <span><a href="CMP1103-ict.html" id="other_course_unit-linkbutton" class="btn btn-sm btn--pink">CMP1103-ICT</a>
+          <a href="communication skills.html" class="btn btn--lightgreen" id="other_course_unit-linkbutton">UNI1101-Comn.Skills</a></span>
+     </div>
+   </div>
+<!--paper section ends here-->
+
+<!--lecture notes-pg-2-->
+   <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3" id="lecture_notes">
+     <div class="container" >
+       <div class="row text-center" id="popular_searches">
+       <div class="col-12">
+       <h4 class="pop">Popular searches </h4>
+       <p><a href="#">CMP1202-Eleectronics 2</a><br>
+          <a href="#">EMT1201-Eng. Math 1</a><br>
+          <a href="#">CMP3202-Electronics III</a><br>
+          <a href="#">CMP1202-Eleectronics 2</a></p>
+     </div>
+     <div class="col-12">
+       <h4 class="pop">Recent uploads</h4>
+        <p><a href="#">ELE4102-pysical tech</a><br>
+           <a href="#">ELE4102-pysical tech</a><br>
+           <a href="#">ELE4102-pysical tech</a><br>
+           <a href="#">ELE4102-pysical tech</a></p>
+
+     </div>
+     </div>
+     </div>
+     <div class="comparisonSection">
+       <h4 class="comparisonSection__title">COMPARE QUESTIONS WITH</h4>
+       <a href="kyambogo university.html" id="comparisonSection__buttons" class="btn btn--orange">Kyambogo University</a>
+       <a href="#" class="btn btn--green" id="comparisonSection__buttons">Mbarara University</a>
+       <a href="ndejje university.html" class="btn btn--blue" id="comparisonSection__buttons">Ndejje University</a>
+       <a href="muk.html" class="btn btn--gray" id="comparisonSection__buttons">Nkumba University</a>
+     </div>
+
+   </div>
+   </div>
+<!--paper section ------------>
+
+<!-------------------->
+
+<!--Questins section-->
+<div class="container-fluid " id="questionSection">
+  <h1>QUESTION SECTION</h1>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div  id="questionSection__ask">
+  <div class="questionSection-welcome_massage">
+  <h4><b>YOU NEED HELP?</b></h4>
+  <hr class="questionSection-welcome_massage-rule">
+  <h6>Don't endlessly surf the internet for an answer,You can ask any questions in this particular course unit here and let your fellow students answer it for you shortly.</h6>
+</div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <h2 class= "h4 text-white bg-info mb-2 p-2 rounded ">Ask a question</h2>
+  </div>
+</div>
+<form  class="mb-3" action="CMP1103-ict.html" method="post">
+  <div class="form-group ">
+    <label for="topic">Topic:</label>
+    <input type="text" class="form-control" id="topic" placeholder="Give your topic a title." required>
+  </div>
+  <div class="form-group ">
+    <label for="question">Ask your question:</label>
+    <textarea class="form-control" placeholder="Type your question here." id="questions" rows="5" required>
+    </textarea>
+
+  </div>
+  <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+  </div>
+  <div class="custom-file">
+    <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+    <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+  </div>
+</div>
+  <div class="form-check">
+    <label class="form-check-label">
+      <input type="checkbox" class="form-check-input" id="checkbox"  value="notification">
+      Notify me upon replies.
+    </label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="reset" class="btn btn-danger">Reset</button>
+</form>
+</div>
+<div class="col-md-6">
+  <div class="row">
+    <div class="col-12">
+      <h2 class= "h4 text-white bg-info mb-2 p-2 rounded-top ">Trending questions</h2>
+      <table class="table table-striped table-bordered table-responsive-lg">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">Topic</th>
+            <th scope="col">Question</th>
+            <th scope="col">Author</th>
+          </tr>
+        </thead>
+        <tbody>
+
+
+          <tr>
+            <td class="author-col">
+              <div>computer hardware</div>
+            </td>
+            <td class="post-col">
+              <div>please help me with reference on what i should focus on because hardware is too much and exams are next week</div>
+              <form class="" action="#" method="post">
+                <p>
+                <button class="btn btn-primary" id="Answer_toggle" type="button" data-toggle="collapse" data-target="#Answer_1" aria-expanded="false" aria-controls="collapseExample">
+               Answer me
+              </button>
+                   </p>
+                    <textarea class="collapse" placeholder="Write your Answer here." rows="5" cols="40" id="Answer_1"></textarea>
+                    <button type="submit" class="btn btn-sm btn-secondary collapse btn-animated" id="Answer_1">Submit</button>
+
+              </form>
+            </td>
+            <td class="author-col">
+              <div>by <a href="#0">Kimera moses</a></div>
+              <div><span>Posted:</span> 01 may 2019,14:20</div>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="author-col">
+              <div>computer architecture</div>
+            </td>
+            <td class="post-col">
+              <div>what is the advantages of Von neuman?</div>
+
+                <form class="" action="#" method="post">
+                  <p>
+                  <button class="btn btn-primary" id="Answer_toggle" type="button" data-toggle="collapse" data-target="#Answer_2" aria-expanded="false" aria-controls="collapseExample">
+                 Answer me
+                </button>
+                     </p>
+                      <textarea class="collapse" placeholder="Write your Answer here." rows="5" cols="40" id="Answer_2"></textarea>
+                      <button type="submit" class="btn btn-sm btn-secondary collapse" id="Answer_2">Submit</button>
+                </form>
+            </td>
+            <td><div>by <a href="#0">Kimera moses</a></div>
+            <div><span>Posted:</span> 03 Apr 2020,14:20</div></td>
+          </tr>
+
+          <tr>
+            <td class="author-col">
+              <div>Collaboration</div>
+            </td>
+            <td class="post-col">
+              <div>Tools neccesary for online colaboration?</div>
+              <form class="" action="#" method="post">
+                <p>
+                <button class="btn btn-primary" id="Answer_toggle" type="button" data-toggle="collapse" data-target="#Answer_3" aria-expanded="false" aria-controls="collapseExample">
+               Answer me
+              </button>
+                   </p>
+                    <textarea class="collapse" placeholder="Write your Answer here." rows="5" cols="40" id="Answer_3"></textarea>
+                    <button type="submit" class="btn btn-sm btn-secondary collapse" id="Answer_3">Submit</button>
+
+              </form>
+            </td>
+            <td class="author-col">
+              <div>by <a href="#0">Kimera moxhus</a></div>
+              <div><span>Posted:</span> 01 may 2019,07:21</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <tfooter>
+        <div class="mb-3 clearfix">
+          <nav aria-label="Page navigation example">
+   <ul class="pagination">
+     <li class="page-item">
+       <a class="page-link" href="#" aria-label="Previous">
+         <span aria-hidden="true">&laquo;</span>
+       </a>
+     </li>
+     <li class="page-item"><a class="page-link" href="#">1</a></li>
+     <li class="page-item"><a class="page-link" href="#">2</a></li>
+     <li class="page-item"><a class="page-link" href="#">3</a></li>
+     <li class="page-item">
+       <a class="page-link" href="#" aria-label="Next">
+         <span aria-hidden="true">&raquo;</span>
+       </a>
+     </li>
+   </ul>
+ </nav>
+         <form class="form-inline float-lg-left d-block d-sm-flex" action="CMP1103-ict.html" method="post">
+           <div class="mb-2 mb-sm-0 mr-2">Display posts from previous:  </div>
+           <div class="form-group mr-2">
+             <label class="sr-only" form="select-time">Time period</label>
+             <select class="form-control form-control-sm" id="select-time" name="">
+               <option value="all-posts" selected>All posts</option>
+               <option value="day">1 day</option>
+               <option value="week">1 Week</option>
+               <option value="month">1 month</option>
+               <option value="year">1 Year</option>
+             </select>
+           </div>
+           <div class="mb-2 mb-sm-0 mr-2">Sort by: </div>
+           <div class="form-group mr-2">
+             <label class="sr-only" form="select-sort">Sort by</label>
+             <select class="form-control form-control-sm" id="select-sort" name="">
+               <option value="author">Author</option>
+               <option value="post-time" selected>Post time</option>
+               <option value="replies">Replies</option>
+               <option value="subject">Subject</option>
+               <option value="views">Views</option>
+             </select>
+           </div>
+           <div class="form-group mr-2">
+             <label class="sr-only" form="select-direction">Sort direction</label>
+             <select class="form-control form-control-sm" id="select-direction" name="">
+               <option value="ascending">Ascending</option>
+               <option value="descending" selected>Descending</option>
+             </select>
+           </div>
+           <button type="submit" class="btn btn-sm btn-primary">Go</button>
+         </form>
+        </div>
+         <a href="#topic" class="btn btn-primary mb-1 ">Ask Question</a>
+      </tfooter>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</body>
+
+<!--question section-------------------->
+
+   <footer>
+  <!--DISCLAIMER-->
+  <div class="container-fluid padding" id="disclaimer">
+    <div class="mox text-center">
+    <div class="col-12">
+      <i class="icon fa fa-exclamation-circle"></i><h1 >Disclaimer</h1>
+      <hr class="rule">
+    </div>
+      <div class="col-12">
+       <p class="">Please note that pastpapers might slightly be different in setting and format to the exams and test that you are preparing for. The lecturers have all the rights to completely change the format and the questions to new ones(<b>Can be encountered but on rare occassions</b>) that have never appeared</p>
+      </div>
+    </div>
+  </div>
+  <!--news Letter section--->
+
+    <div class="newsletter">
+      <div class="section-box">
+      </div>
+        <div class="newsletter-row">
+          <div class="newsletter_SubscribeNote">
+            <div class="newsletter_SubscribeNote-title">
+            <h1>Subscribe To Our Newsletter</h1>
+            <p>Subscribe to get Notified whenever a paper is uploaded in your particular course or if there are news trending around your campus</p>
+           <hr class="newsletter_SubscribeNote-title__rule">
+          </div>
+
+          <form class="mb-4" action="#" method="post">
+            <b><label for="username">Name:</label></b>
+             <input type="newsletter_text" class="form-control" id="username" placeholder="FirstName  LastName" required>
+             <b><label for="usercourse">Course:</label></b>
+             <input type="newsletter_text" class="form-control" id="usercourse" placeholder="What's Your Course?" required>
+               <b><label for="useremail">Email:</label></b>
+               <input type="newsletter_text" class="form-control" id="useremail" placeholder="Username@gmail.com" required>
+               <b><button type="submit" class="btn btn-submit" onkeypress="#">Submit</button></b>
+          </form>
+        </div>
+        </div>
+    </div>
+
+    <!--connect-->
+      <div class="container-fluid padding" id="footer__connect">
+        <div class="row text-center" id="footer_contactUs">
+          <div class="col-md-6">
+            <h4>Contact Us</h4>
+            <hr class="rule">
+            <p>Tel:+256-778451025<br>+256-759130054<br>
+            Find Us:Kampala,Uganda<br>
+            Makerere University<br>
+            Email us: <a href="#">gpaelevator@gmail.com</a><br></p>
+          </div>
+          <div class="col-md-6">
+            <h4>Follow Us</h4>
+            <hr class="rule">
+            <i class="fab fa-facebook"></i><a href="#">Gpa Elevator</a><br>
+            <i class="fab fa-twitter"></i><a href="#">@gpaelevator</a><br>
+            <i class="fab fa-google-plus-g"></i><a href="#">Gpa Elevator</a><br>
+            <i class="fab fa-instagram"></i><a href="#">@gpaelevator</a><br>
+            <i class="fab fa-youtube"></i><a href="#">Gpa Elevator</a>
+          </div>
+        </div>
+     </div>
+                <div  id="footer__connect-copyrightSection" >
+                    <hr class="footer__connect-copyrightSection_rule">
+                      <h4>All rights reserved gpa elevator copyright &copy; 2019</h4>
+                </div>
+              </footer>
+
+</div>
+
+<button onclick="topFunction()" id="back-to-top" title="Back to top"><i class="back-2-top_icon fas fa-arrow-up"></i></button>
+
+  <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/popper.min.js"></script>
+  <script type="text/javascript" src="../js/all.js"></script>
+  <script type="text/javascript" src="../js/elevator.js"></script>
+  <link rel="stylesheet" href="../css/media-queries.css">
+
+  </html>
