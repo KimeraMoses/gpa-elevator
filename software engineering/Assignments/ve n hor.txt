@@ -1,0 +1,17 @@
+ads of hor partitionin
+1. these are easy to test, maintain and extend
+2. they have fewer side efffects in change propagation or error propagation
+
+dis ads
+more data has to be passed across moduke interfaces which compicates the overall control of program flow
+
+vertical partioning 
+ver part suggests the control and work should be distributed top down in program struture
+
+in vertical partioning 
+define seperate branches of the module hierarchy for each majot function
+use control control modules to co-ordinate coomunicaation btn functions
+
+advantages of vertical
+these are easy to maintain the changes
+they reduce the change impact and eerror propagation
